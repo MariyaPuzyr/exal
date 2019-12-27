@@ -1,27 +1,97 @@
-.header-menu__list {
-  &-item {
-    padding: 30px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
-  }
-}
-
-.header-menu__tabs {
-  li {
-    float: left;
-    width: 20%;
-  }
-  a {
-    display: block;
-    text-align: center;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    margin: 8px 20px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    color: $color_default;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #888;
-    padding: 20px 0;
-    border-bottom: 2px solid #888;
-    background: #f7f7f7;
-
-    &:hover, &.active {
-      background: #ddd;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 9px;
+    }
+  }
+  &-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 320px;
+    &__link {
+      margin: 8px 15px 10px;
+      display: flex;
+      position: relative;
+      &:hover .icons, &.active:hover .icons {
+        background: rgba($color_default, .7);
+      }
+      &.active .icons {
+        background: #2FAB6B;
+      }
+      .notification {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        border-radius: 50%;
+        min-width: 18px;
+        flex: 0 0 auto;
+        padding: 2px 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2fab6b;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+    &__tabs {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__list-item {
+      padding: 30px;
+      background: #fff9f2;
+      transition: .3s;
+      width: 320px;
+      height: 100vh;
+      overflow: auto;
+    }
+    .icons {
+      mask-size: contain;
+      background: $color_default;
+      transition: .3s;
+    }
+    .menu-info {
+      width: 34px;
+      height: 30px;
+      mask: url("../img/svg/menu-info.svg") no-repeat center;
+    }
+    .menu-icons {
+      width: 30px;
+      height: 33px;
+      mask: url("../img/svg/menu-icons.svg") no-repeat center;
+    }
+    .menu-payments {
+      width: 32px;
+      height: 27px;
+      mask: url("../img/svg/menu-payments.svg") no-repeat center;
+    }
+    .menu-settings-info {
+      width: 30px;
+      height: 30px;
+      mask: url("../img/svg/menu-settings-info.svg") no-repeat center;
+    }
+    .menu-icons-burger {
+      width: 29px;
+      height: 24px;
+      mask: url("../img/svg/menu-icons-burger.svg") no-repeat center;
     }
   }
 }

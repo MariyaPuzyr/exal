@@ -1,66 +1,66 @@
-header
+header.header
   a(href='/').logo
     img(src='/img/svg/logo.svg' alt='')
     span exal.money
   .header-menu
-    .header-menu__top
-      ul.header-menu__tabs
-        li
-          a.header-menu__link.active(href='#contacts')
-            +sprite('icon', 'menu-info')
-        li
-          a.header-menu__link(href='#tab2')
-            +sprite('icon', 'menu-icons')
-        li
-          a.header-menu__link(href='#tab3')
-            +sprite('icon', 'menu-payments')
-        li
-          a.header-menu__link(href='#tab4')
-            +sprite('icon', 'menu-settings-info')
-        li
-          a.header-menu__link(href='#tab5')
-            +sprite('icon', 'menu-icons-burger')
-      section.header-menu__list
-        #contacts.header-menu__list-item
-          h2 Контакты
-          .tabs
-            .tab
-              input#rd1(type='radio', name='contacts')
-              label.tab-label(for='rd1') Мессенджеры
-              .tab-content
-                include ../components/messengers
-            .tab
-              input#rd2(type='radio', name='contacts')
-              label.tab-label(for='rd2') Форма обратной связи
-              .tab-content
-                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-            .tab
-              input#rd3(type='radio', name='contacts')
-              label.tab-label(for='rd3') Адрес и реквизиты
-              .tab-content
-                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+    ul.header-menu__tabs
+      li
+        a.header-menu__link(href='#contacts')
+          .icons.menu-info
+          .notification 2
+      li
+        a.header-menu__link(href='#tab2')
+          .icons.menu-icons
+      li
+        a.header-menu__link(href='#tab3')
+          .icons.menu-payments
+      li
+        a.header-menu__link(href='#tab4')
+          .icons.menu-settings-info
+      li
+        a.header-menu__link(href='#tab5')
+          .icons.menu-icons-burger
+    .header-menu__list
+      #contacts.header-menu__list-item
+        h2 Контакты
+        .tabs
+          .tab
+            input#rd1(type='radio', name='contacts')
+            label.tab-label(for='rd1') Мессенджеры
+            .tab-content
+              include ../components/messengers
+          .tab
+            input#rd2(type='radio', name='contacts')
+            label.tab-label(for='rd2') Форма обратной связи
+            .tab-content
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+          .tab
+            input#rd3(type='radio', name='contacts')
+            label.tab-label(for='rd3') Адрес и реквизиты
+            .tab-content
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
 
-        #tab2.header-menu__list-item
-          h2 Heading 2
-          p
-            | Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.
-        #tab3.header-menu__list-item
-          h2 Heading 3
-          p
-            | Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?
-        #tab4.header-menu__list-item
-          h2 Heading 4
-          p
-            | Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.
-        #tab5.header-menu__list-item
-          ul
-            li
-              a(href='#') Обмен
-            li
-              a(href='#') Резервы валют
-            li
-              a(href='#') Новости
-            li
-              a(href='#') О сервисе
-            li
-              a(href='#') Партнерская программа
+      #tab2.header-menu__list-item
+        h2 Heading 2
+        p
+          | Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.
+      #tab3.header-menu__list-item
+        h2 Heading 3
+        p
+          | Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?
+      #tab4.header-menu__list-item
+        h2 Heading 4
+        p
+          | Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.
+      #tab5.header-menu__list-item
+        ul
+          li
+            a(href='#') Обмен
+          li
+            a(href='#') Резервы валют
+          li
+            a(href='#') Новости
+          li
+            a(href='#') О сервисе
+          li
+            a(href='#') Партнерская программа

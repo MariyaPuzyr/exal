@@ -9,114 +9,103 @@
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
-    <header><a class="logo" href="/"><img src="/img/svg/logo.svg" alt=""><span>exal.money</span></a>
+    <header class="header"><a class="logo" href="/"><img src="/img/svg/logo.svg" alt=""><span>exal.money</span></a>
       <div class="header-menu">
-        <div class="header-menu__top">
-          <ul class="header-menu__tabs">
-            <li><a class="header-menu__link active" href="#contacts">
-                <svg class="icon">
-                  <use xlink:href="./img/sprites/sprite.svg#menu-info"></use>
-                </svg></a></li>
-            <li><a class="header-menu__link" href="#tab2">
-                <svg class="icon">
-                  <use xlink:href="./img/sprites/sprite.svg#menu-icons"></use>
-                </svg></a></li>
-            <li><a class="header-menu__link" href="#tab3">
-                <svg class="icon">
-                  <use xlink:href="./img/sprites/sprite.svg#menu-payments"></use>
-                </svg></a></li>
-            <li><a class="header-menu__link" href="#tab4">
-                <svg class="icon">
-                  <use xlink:href="./img/sprites/sprite.svg#menu-settings-info"></use>
-                </svg></a></li>
-            <li><a class="header-menu__link" href="#tab5">
-                <svg class="icon">
-                  <use xlink:href="./img/sprites/sprite.svg#menu-icons-burger"></use>
-                </svg></a></li>
-          </ul>
-          <section class="header-menu__list">
-            <div class="header-menu__list-item" id="contacts">
-              <h2>Контакты</h2>
-              <div class="tabs">
-                <div class="tab">
-                  <input id="rd1" type="radio" name="contacts">
-                  <label class="tab-label" for="rd1">Мессенджеры</label>
-                  <div class="tab-content">
-                    <div class="contact-messangers">
-                      <p>Операторы на связи 24 часа.</p>
-                      <div class="contact-info">
-                        <div class="contact-ico">
-                          <svg class="icon">
-                            <use xlink:href="./img/sprites/sprite.svg#facebook-ico"></use>
-                          </svg>
-                        </div>
-                        <div class="contact-info__item">Facebook messenger<a href="https://m.me/NewLineonline">@NewLineonline</a></div>
+        <ul class="header-menu__tabs">
+          <li><a class="header-menu__link" href="#contacts">
+              <div class="icons menu-info"></div>
+              <div class="notification">2</div></a></li>
+          <li><a class="header-menu__link" href="#tab2">
+              <div class="icons menu-icons"></div></a></li>
+          <li><a class="header-menu__link" href="#tab3">
+              <div class="icons menu-payments"></div></a></li>
+          <li><a class="header-menu__link" href="#tab4">
+              <div class="icons menu-settings-info"></div></a></li>
+          <li><a class="header-menu__link" href="#tab5">
+              <div class="icons menu-icons-burger"></div></a></li>
+        </ul>
+        <div class="header-menu__list">
+          <div class="header-menu__list-item" id="contacts">
+            <h2>Контакты</h2>
+            <div class="tabs">
+              <div class="tab">
+                <input id="rd1" type="radio" name="contacts">
+                <label class="tab-label" for="rd1">Мессенджеры</label>
+                <div class="tab-content">
+                  <div class="contact-messangers">
+                    <p>Операторы на связи 24 часа.</p>
+                    <div class="contact-info">
+                      <div class="contact-ico">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#facebook-ico"></use>
+                        </svg>
                       </div>
-                      <div class="contact-info">
-                        <div class="contact-ico"><img class="icon" src="/img/telegram-ico.png" alt=""></div>
-                        <div class="contact-info__item">Telegram<a href="tg://resolve?domain=NewLineonline">@NewLineonline</a><a href="tg://resolve?domain=NewLineOnline_bot">@NewLineOnline_bot</a></div>
+                      <div class="contact-info__item">Facebook messenger<a href="https://m.me/NewLineonline">@NewLineonline</a></div>
+                    </div>
+                    <div class="contact-info">
+                      <div class="contact-ico"><img class="icon" src="/img/telegram-ico.png" alt=""></div>
+                      <div class="contact-info__item">Telegram<a href="tg://resolve?domain=NewLineonline">@NewLineonline</a><a href="tg://resolve?domain=NewLineOnline_bot">@NewLineOnline_bot</a></div>
+                    </div>
+                    <div class="contact-info">
+                      <div class="contact-ico">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#skype-ico"></use>
+                        </svg>
                       </div>
-                      <div class="contact-info">
-                        <div class="contact-ico">
-                          <svg class="icon">
-                            <use xlink:href="./img/sprites/sprite.svg#skype-ico"></use>
-                          </svg>
-                        </div>
-                        <div class="contact-info__item">Skype<a href="skype:Exall?chat">Exall</a></div>
+                      <div class="contact-info__item">Skype<a href="skype:Exall?chat">Exall</a></div>
+                    </div>
+                    <div class="contact-info">
+                      <div class="contact-ico">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#viber-ico"></use>
+                        </svg>
                       </div>
-                      <div class="contact-info">
-                        <div class="contact-ico">
-                          <svg class="icon">
-                            <use xlink:href="./img/sprites/sprite.svg#viber-ico"></use>
-                          </svg>
-                        </div>
-                        <div class="contact-info__item">Viber<a href="viber://chat?number=+79817827276">+79817827276</a></div>
+                      <div class="contact-info__item">Viber<a href="viber://chat?number=+79817827276">+79817827276</a></div>
+                    </div>
+                    <div class="contact-info">
+                      <div class="contact-ico">
+                        <svg class="icon">
+                          <use xlink:href="./img/sprites/sprite.svg#watsapp-ico"></use>
+                        </svg>
                       </div>
-                      <div class="contact-info">
-                        <div class="contact-ico">
-                          <svg class="icon">
-                            <use xlink:href="./img/sprites/sprite.svg#watsapp-ico"></use>
-                          </svg>
-                        </div>
-                        <div class="contact-info__item">Watsapp<a href="whatsapp://send?phone=+79817827276">@NewLineonline</a></div>
-                      </div>
+                      <div class="contact-info__item">Watsapp<a href="whatsapp://send?phone=+79817827276">@NewLineonline</a></div>
                     </div>
                   </div>
                 </div>
-                <div class="tab">
-                  <input id="rd2" type="radio" name="contacts">
-                  <label class="tab-label" for="rd2">Форма обратной связи</label>
-                  <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
-                </div>
-                <div class="tab">
-                  <input id="rd3" type="radio" name="contacts">
-                  <label class="tab-label" for="rd3">Адрес и реквизиты</label>
-                  <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
-                </div>
+              </div>
+              <div class="tab">
+                <input id="rd2" type="radio" name="contacts">
+                <label class="tab-label" for="rd2">Форма обратной связи</label>
+                <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+              </div>
+              <div class="tab">
+                <input id="rd3" type="radio" name="contacts">
+                <label class="tab-label" for="rd3">Адрес и реквизиты</label>
+                <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
               </div>
             </div>
-            <div class="header-menu__list-item" id="tab2">
-              <h2>Heading 2</h2>
-              <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
-            </div>
-            <div class="header-menu__list-item" id="tab3">
-              <h2>Heading 3</h2>
-              <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?</p>
-            </div>
-            <div class="header-menu__list-item" id="tab4">
-              <h2>Heading 4</h2>
-              <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.</p>
-            </div>
-            <div class="header-menu__list-item" id="tab5">
-              <ul>
-                <li><a href="#">Обмен</a></li>
-                <li><a href="#">Резервы валют</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">О сервисе</a></li>
-                <li><a href="#">Партнерская программа</a></li>
-              </ul>
-            </div>
-          </section>
+          </div>
+          <div class="header-menu__list-item" id="tab2">
+            <h2>Heading 2</h2>
+            <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
+          </div>
+          <div class="header-menu__list-item" id="tab3">
+            <h2>Heading 3</h2>
+            <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?</p>
+          </div>
+          <div class="header-menu__list-item" id="tab4">
+            <h2>Heading 4</h2>
+            <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.</p>
+          </div>
+          <div class="header-menu__list-item" id="tab5">
+            <ul>
+              <li><a href="#">Обмен</a></li>
+              <li><a href="#">Резервы валют</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">О сервисе</a></li>
+              <li><a href="#">Партнерская программа</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

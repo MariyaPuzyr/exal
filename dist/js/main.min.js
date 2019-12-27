@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $('.header-menu__list-item').hide();
-  $('.header-menu__list-item:first-of-type').show();
   $('.header-menu__link').click(function(e){
     e.preventDefault();
     $(this).closest('li').siblings().children('a').removeClass('active');

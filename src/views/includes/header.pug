@@ -3,56 +3,33 @@ header.header
     img(src='/img/svg/logo.svg' alt='')
     span exal.money
   .header-menu
-    ul.header-menu__tabs
+    ul.nav(role='tablist')
       li
-        a.header-menu__link(href='#contacts')
+        a#contacts-tab.header-menu__link(data-toggle='tab', href='#contacts', role='tab', aria-controls='contacts', aria-selected='true')
           .icons.menu-info
           .notification 2
       li
-        a.header-menu__link(href='#tab2')
+        a#my-operations-tab.header-menu__link(data-toggle='tab', href='#my-operations', role='tab', aria-controls='my-operations', aria-selected='false')
           .icons.menu-icons
       li
-        a.header-menu__link(href='#tab3')
+        a#accounts-list-tab.header-menu__link(data-toggle='tab', href='#accounts-list', role='tab', aria-controls='accounts-list', aria-selected='false')
           .icons.menu-payments
       li
-        a.header-menu__link(href='#tab4')
+        a#user-info-tab.header-menu__link(data-toggle='tab', href='#user-info', role='tab', aria-controls='user-info', aria-selected='false')
           .icons.menu-settings-info
       li
-        a.header-menu__link(href='#tab5')
+        a#links-tab.header-menu__link(data-toggle='tab', href='#links', role='tab', aria-controls='links', aria-selected='false')
           .icons.menu-icons-burger
-    .header-menu__list
-      #contacts.header-menu__list-item
-        h2 Контакты
-        .tabs
-          .tab
-            input#rd1(type='radio', name='contacts')
-            label.tab-label(for='rd1') Мессенджеры
-            .tab-content
-              include ../components/messengers
-          .tab
-            input#rd2(type='radio', name='contacts')
-            label.tab-label(for='rd2') Форма обратной связи
-            .tab-content
-              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-          .tab
-            input#rd3(type='radio', name='contacts')
-            label.tab-label(for='rd3') Адрес и реквизиты
-            .tab-content
-              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-
-      #tab2.header-menu__list-item
-        h2 Heading 2
-        p
-          | Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.
-      #tab3.header-menu__list-item
-        h2 Heading 3
-        p
-          | Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?
-      #tab4.header-menu__list-item
-        h2 Heading 4
-        p
-          | Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.
-      #tab5.header-menu__list-item
+    #nav-tabContent.tab-content.header-menu__list
+      #contacts.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='contacts-tab')
+        include ../components/messengers
+      #my-operations.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='my-operations-tab')
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+      #accounts-list.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='accounts-list-tab')
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+      #user-info.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='user-info-tab')
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+      #links.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='links-tab')
         ul
           li
             a(href='#') Обмен
@@ -64,3 +41,47 @@ header.header
             a(href='#') О сервисе
           li
             a(href='#') Партнерская программа
+    //.tab-content.header-menu__list
+    //  #contacts.tab-pane.fade.header-menu__list-item
+    //    h2 Контакты
+    //    .tabs
+    //      .tab
+    //        input#rd1(type='radio', name='contacts')
+    //        label.tab-label(for='rd1') Мессенджеры
+    //        .tab-content
+    //          include ../components/messengers
+    //      .tab
+    //        input#rd2(type='radio', name='contacts')
+    //        label.tab-label(for='rd2') Форма обратной связи
+    //        .tab-content
+    //          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+    //      .tab
+    //        input#rd3(type='radio', name='contacts')
+    //        label.tab-label(for='rd3') Адрес и реквизиты
+    //        .tab-content
+    //          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+    //
+    //  #tab2.header-menu__list-item
+    //    h2 Heading 2
+    //    p
+    //      | Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.
+    //  #tab3.header-menu__list-item
+    //    h2 Heading 3
+    //    p
+    //      | Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?
+    //  #tab4.header-menu__list-item
+    //    h2 Heading 4
+    //    p
+    //      | Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.
+    //  #tab5.header-menu__list-item
+    //    ul
+    //      li
+    //        a(href='#') Обмен
+    //      li
+    //        a(href='#') Резервы валют
+    //      li
+    //        a(href='#') Новости
+    //      li
+    //        a(href='#') О сервисе
+    //      li
+    //        a(href='#') Партнерская программа

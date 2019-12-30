@@ -121,7 +121,8 @@ gulp.task('scripts', function () {
 
 gulp.task('main-libs', function () {
   return gulp.src([
-    './node_modules/jquery/dist/jquery.min.js'
+    './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js'
   ])
       .pipe(concat('main-libs.min.js'))
       .pipe(gulp.dest(paths.scripts.dist))

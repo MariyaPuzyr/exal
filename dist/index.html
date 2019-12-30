@@ -11,93 +11,66 @@
   <body>
     <header class="header"><a class="logo" href="/"><img src="/img/svg/logo.svg" alt=""><span>exal.money</span></a>
       <div class="header-menu">
-        <ul class="header-menu__tabs">
-          <li><a class="header-menu__link" href="#contacts">
+        <ul class="nav" role="tablist">
+          <li><a class="header-menu__link" id="contacts-tab" data-toggle="tab" href="#contacts" role="tab" aria-controls="contacts" aria-selected="true">
               <div class="icons menu-info"></div>
               <div class="notification">2</div></a></li>
-          <li><a class="header-menu__link" href="#tab2">
+          <li><a class="header-menu__link" id="my-operations-tab" data-toggle="tab" href="#my-operations" role="tab" aria-controls="my-operations" aria-selected="false">
               <div class="icons menu-icons"></div></a></li>
-          <li><a class="header-menu__link" href="#tab3">
+          <li><a class="header-menu__link" id="accounts-list-tab" data-toggle="tab" href="#accounts-list" role="tab" aria-controls="accounts-list" aria-selected="false">
               <div class="icons menu-payments"></div></a></li>
-          <li><a class="header-menu__link" href="#tab4">
+          <li><a class="header-menu__link" id="user-info-tab" data-toggle="tab" href="#user-info" role="tab" aria-controls="user-info" aria-selected="false">
               <div class="icons menu-settings-info"></div></a></li>
-          <li><a class="header-menu__link" href="#tab5">
+          <li><a class="header-menu__link" id="links-tab" data-toggle="tab" href="#links" role="tab" aria-controls="links" aria-selected="false">
               <div class="icons menu-icons-burger"></div></a></li>
         </ul>
-        <div class="header-menu__list">
-          <div class="header-menu__list-item" id="contacts">
-            <h2>Контакты</h2>
-            <div class="tabs">
-              <div class="tab">
-                <input id="rd1" type="radio" name="contacts">
-                <label class="tab-label" for="rd1">Мессенджеры</label>
-                <div class="tab-content">
-                  <div class="contact-messangers">
-                    <p>Операторы на связи 24 часа.</p>
-                    <div class="contact-info">
-                      <div class="contact-ico">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#facebook-ico"></use>
-                        </svg>
-                      </div>
-                      <div class="contact-info__item">Facebook messenger<a href="https://m.me/NewLineonline">@NewLineonline</a></div>
-                    </div>
-                    <div class="contact-info">
-                      <div class="contact-ico"><img class="icon" src="/img/telegram-ico.png" alt=""></div>
-                      <div class="contact-info__item">Telegram<a href="tg://resolve?domain=NewLineonline">@NewLineonline</a><a href="tg://resolve?domain=NewLineOnline_bot">@NewLineOnline_bot</a></div>
-                    </div>
-                    <div class="contact-info">
-                      <div class="contact-ico">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#skype-ico"></use>
-                        </svg>
-                      </div>
-                      <div class="contact-info__item">Skype<a href="skype:Exall?chat">Exall</a></div>
-                    </div>
-                    <div class="contact-info">
-                      <div class="contact-ico">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#viber-ico"></use>
-                        </svg>
-                      </div>
-                      <div class="contact-info__item">Viber<a href="viber://chat?number=+79817827276">+79817827276</a></div>
-                    </div>
-                    <div class="contact-info">
-                      <div class="contact-ico">
-                        <svg class="icon">
-                          <use xlink:href="./img/sprites/sprite.svg#watsapp-ico"></use>
-                        </svg>
-                      </div>
-                      <div class="contact-info__item">Watsapp<a href="whatsapp://send?phone=+79817827276">@NewLineonline</a></div>
-                    </div>
-                  </div>
+        <div class="tab-content header-menu__list" id="nav-tabContent">
+          <div class="tab-pane fade header-menu__list-item" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+            <div class="contact-messangers">
+              <h2>Контакты</h2>
+              <p>Операторы на связи 24 часа.</p>
+              <div class="contact-info">
+                <div class="contact-ico">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#facebook-ico"></use>
+                  </svg>
                 </div>
+                <div class="contact-info__item">Facebook messenger<a href="https://m.me/NewLineonline">@NewLineonline</a></div>
               </div>
-              <div class="tab">
-                <input id="rd2" type="radio" name="contacts">
-                <label class="tab-label" for="rd2">Форма обратной связи</label>
-                <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+              <div class="contact-info">
+                <div class="contact-ico"><img class="icon" src="/img/telegram-ico.png" alt=""></div>
+                <div class="contact-info__item">Telegram<a href="tg://resolve?domain=NewLineonline">@NewLineonline</a><a href="tg://resolve?domain=NewLineOnline_bot">@NewLineOnline_bot</a></div>
               </div>
-              <div class="tab">
-                <input id="rd3" type="radio" name="contacts">
-                <label class="tab-label" for="rd3">Адрес и реквизиты</label>
-                <div class="tab-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+              <div class="contact-info">
+                <div class="contact-ico">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#skype-ico"></use>
+                  </svg>
+                </div>
+                <div class="contact-info__item">Skype<a href="skype:Exall?chat">Exall</a></div>
+              </div>
+              <div class="contact-info">
+                <div class="contact-ico">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#viber-ico"></use>
+                  </svg>
+                </div>
+                <div class="contact-info__item">Viber<a href="viber://chat?number=+79817827276">+79817827276</a></div>
+              </div>
+              <div class="contact-info">
+                <div class="contact-ico">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#watsapp-ico"></use>
+                  </svg>
+                </div>
+                <div class="contact-info__item">Watsapp<a href="whatsapp://send?phone=+79817827276">@NewLineonline</a></div>
               </div>
             </div>
           </div>
-          <div class="header-menu__list-item" id="tab2">
-            <h2>Heading 2</h2>
-            <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
-          </div>
-          <div class="header-menu__list-item" id="tab3">
-            <h2>Heading 3</h2>
-            <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?</p>
-          </div>
-          <div class="header-menu__list-item" id="tab4">
-            <h2>Heading 4</h2>
-            <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.</p>
-          </div>
-          <div class="header-menu__list-item" id="tab5">
+          <div class="tab-pane fade header-menu__list-item" id="my-operations" role="tabpanel" aria-labelledby="my-operations-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+          <div class="tab-pane fade header-menu__list-item" id="accounts-list" role="tabpanel" aria-labelledby="accounts-list-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+          <div class="tab-pane fade header-menu__list-item" id="user-info" role="tabpanel" aria-labelledby="user-info-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+          <div class="tab-pane fade header-menu__list-item" id="links" role="tabpanel" aria-labelledby="links-tab">
             <ul>
               <li><a href="#">Обмен</a></li>
               <li><a href="#">Резервы валют</a></li>
@@ -107,6 +80,50 @@
             </ul>
           </div>
         </div>
+        <!--.tab-content.header-menu__list-->
+        <!--  #contacts.tab-pane.fade.header-menu__list-item-->
+        <!--    h2 Контакты-->
+        <!--    .tabs-->
+        <!--      .tab-->
+        <!--        input#rd1(type='radio', name='contacts')-->
+        <!--        label.tab-label(for='rd1') Мессенджеры-->
+        <!--        .tab-content-->
+        <!--          include ../components/messengers-->
+        <!--      .tab-->
+        <!--        input#rd2(type='radio', name='contacts')-->
+        <!--        label.tab-label(for='rd2') Форма обратной связи-->
+        <!--        .tab-content-->
+        <!--          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.-->
+        <!--      .tab-->
+        <!--        input#rd3(type='radio', name='contacts')-->
+        <!--        label.tab-label(for='rd3') Адрес и реквизиты-->
+        <!--        .tab-content-->
+        <!--          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.-->
+        <!---->
+        <!--  #tab2.header-menu__list-item-->
+        <!--    h2 Heading 2-->
+        <!--    p-->
+        <!--      | Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.-->
+        <!--  #tab3.header-menu__list-item-->
+        <!--    h2 Heading 3-->
+        <!--    p-->
+        <!--      | Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?-->
+        <!--  #tab4.header-menu__list-item-->
+        <!--    h2 Heading 4-->
+        <!--    p-->
+        <!--      | Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.-->
+        <!--  #tab5.header-menu__list-item-->
+        <!--    ul-->
+        <!--      li-->
+        <!--        a(href='#') Обмен-->
+        <!--      li-->
+        <!--        a(href='#') Резервы валют-->
+        <!--      li-->
+        <!--        a(href='#') Новости-->
+        <!--      li-->
+        <!--        a(href='#') О сервисе-->
+        <!--      li-->
+        <!--        a(href='#') Партнерская программа-->
       </div>
     </header>
     <main></main>

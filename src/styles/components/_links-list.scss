@@ -1,0 +1,82 @@
+.menu-height {
+  height: calc(100vh - 51px);
+}
+.links-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  a {
+    font-size: 20px;
+    line-height: 29px;
+    color: $color_default;
+    font-weight: 700;
+    display: flex;
+    padding: 10px 20px;
+    transition: .3s;
+    position: relative;
+    &::after {
+      content: '';
+      width: calc(100% + 20px);
+      height: 100%;
+      top: 0;
+      left: -20px;
+      position: absolute;
+      background: #7fb6ff;
+      transition: .3s;
+      z-index: -1;
+      opacity: 0;
+    }
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.partners-info {
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+    display: flex;
+    padding: 5px 20px;
+  }
+  &__copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    .form-control {
+      background: #fff9f2;
+      border: none;
+      border-bottom: 2px solid $color_default;
+      padding: 8px 4px;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color_default;
+      width: 240px;
+      border-radius: 0;
+    }
+    .copy-btn {
+      width: 20px;
+      height: 20px;
+      background: url("../img/svg/copy-ico.svg") no-repeat center;
+      background-size: contain;
+      margin-left: 20px;
+      padding: 0;
+      border: none;
+    }
+  }
+  &__description {
+    color: rgba($color_default, .7);
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 20px 15px;
+    a {
+      color: rgba($color_default, .7);
+    }
+  }
+}

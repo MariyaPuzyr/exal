@@ -117,13 +117,25 @@
           <div class="tab-pane fade header-menu__list-item" id="accounts-list" role="tabpanel" aria-labelledby="accounts-list-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
           <div class="tab-pane fade header-menu__list-item" id="user-info" role="tabpanel" aria-labelledby="user-info-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
           <div class="tab-pane fade header-menu__list-item" id="links" role="tabpanel" aria-labelledby="links-tab">
-            <ul>
-              <li><a href="#">Обмен</a></li>
-              <li><a href="#">Резервы валют</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">О сервисе</a></li>
-              <li><a href="#">Партнерская программа</a></li>
-            </ul>
+            <div class="d-flex flex-column justify-content-between menu-height">
+              <ul class="links-list">
+                <li><a href="#">Обмен</a></li>
+                <li><a href="#">Резервы валют</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+              </ul>
+              <div class="partners-info">
+                <div class="partners-info__title">Партнерская ссылка:</div>
+                <form action="">
+                  <div class="partners-info__copy">
+                    <input class="form-control" type="text" disabled="disabled" value="Exall.money/thanksazaza">
+                    <button class="copy-btn"></button>
+                  </div>
+                  <div class="partners-info__description">получайте 10-30% от прибыли с переводов.<a href="#">Подробнее</a></div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

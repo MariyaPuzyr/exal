@@ -20,8 +20,8 @@ header.header
       li
         a#links-tab.header-menu__link(data-toggle='tab', href='#links', role='tab', aria-controls='links', aria-selected='false')
           .icons.menu-icons-burger
-    #nav-tabContent.tab-content.header-menu__list
-      #contacts.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='contacts-tab')
+    #nav-tabContent.tab-content
+      #contacts.tab-pane.fade(role='tabpanel', aria-labelledby='contacts-tab')
         h2 Контакты
         #contacts-info.accordion
           .card
@@ -42,13 +42,13 @@ header.header
             #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#contacts-info')
               .card-body
                 include ../components/contact-address
-      #my-operations.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='my-operations-tab')
+      #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-      #accounts-list.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='accounts-list-tab')
+      #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-      #user-info.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='user-info-tab')
+      #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-      #links.tab-pane.fade.header-menu__list-item(role='tabpanel', aria-labelledby='links-tab')
+      #links.tab-pane.fade(role='tabpanel', aria-labelledby='links-tab')
         .d-flex.flex-column.justify-content-between.menu-height
           ul.links-list
             li

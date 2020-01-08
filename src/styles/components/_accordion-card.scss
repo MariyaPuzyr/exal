@@ -1,0 +1,25 @@
+.tab-pane {
+  width: 320px;
+  height: calc(100vh - 51px);
+  overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  h2 {
+    margin: 5px 18px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $color_default;
+  }
+}
+
+.accordion {
+  .card-header {
+    border: 1px solid rgba($color_default, .2);
+    border-radius: 0;
+    background: #fff9f2;
+  }
+}

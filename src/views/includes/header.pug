@@ -28,20 +28,17 @@ header.header
             #headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
               | Мессенджеры
             #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#contacts-info')
-              .card-body
-                include ../components/messengers
+              include ../components/messengers
           .card
             #headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
               | Форма обратной связи
             #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#contacts-info')
-              .card-body
-                include ../components/contact-form
+              include ../components/contact-form
           .card
             #headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
               | Адрес и реквизиты
             #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#contacts-info')
-              .card-body
-                include ../components/contact-address
+              include ../components/contact-address
       #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
       #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')

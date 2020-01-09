@@ -7443,6 +7443,8 @@ a.text-dark:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 10;
+  position: relative;
 }
 
 .header .logo span {
@@ -12704,6 +12706,24 @@ a.text-dark:focus {
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .header .logo span {
+    display: none;
+  }
+
+  .header-menu .nav {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .header-menu__link {
+    margin-left: 5px;
+    margin-right: 15px;
   }
 }
 

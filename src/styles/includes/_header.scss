@@ -11,8 +11,13 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    z-index: 10;
+    position: relative;
     span {
       margin-left: 9px;
+      @include adapt_to('phone'){
+        display: none;
+      }
     }
   }
   &-menu {
@@ -20,6 +25,11 @@
     right: 0;
     top: 0;
     width: 320px;
+    @include adapt_to('phone'){
+      .nav {
+        justify-content: flex-end;
+      }
+    }
     &.active {
       background: $color_floral_white;
     }
@@ -52,6 +62,10 @@
         color: #ffffff;
         font-size: 14px;
         line-height: 14px;
+      }
+      @include adapt_to('phone'){
+        margin-left: 5px;
+        margin-right: 15px;
       }
     }
     &__tabs {

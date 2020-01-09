@@ -31,8 +31,8 @@
               <div class="card">
                 <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Мессенджеры</div>
                 <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#contacts-info">
-                  <div class="contact-messangers">
-                    <p>Операторы на связи 24 часа.</p>
+                  <div class="contact-messengers">
+                    <p class="description">Операторы на связи 24 часа.</p>
                     <div class="contact-info">
                       <div class="contact-ico">
                         <svg class="icon">
@@ -76,19 +76,19 @@
                 <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Форма обратной связи</div>
                 <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#contacts-info">
                   <div class="contact-form">
-                    <p>Вопросы, предложения и пожелания.</p>
+                    <p class="description">Вопросы, предложения и пожелания.</p>
                     <form action="">
                       <div class="form-group">
-                        <label>Email:</label>
-                        <input class="form-control" type="email">
+                        <input class="form-control" type="text" required=""><span bar=""></span>
+                        <label floater="">Email:</label><span class="helper-text">Helper text</span>
                       </div>
                       <div class="form-group">
-                        <label>Имя:</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required=""><span bar=""></span>
+                        <label floater="">Имя:</label><span class="helper-text">Helper text</span>
                       </div>
                       <div class="form-group">
-                        <label>Сообщение:</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea class="form-control" id="message" rows="2" name="message" required=""></textarea><span bar=""></span>
+                        <label floater="" for="message">Сообщение:</label>
                       </div>
                       <div class="form-group">
                         <button class="send-btn" type="submit">Отправить</button>

@@ -7739,7 +7739,12 @@ a.text-dark:focus {
   align-items: center;
   cursor: pointer;
   padding: 10px 20px;
+  min-height: auto;
   background: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  line-height: 29px;
+  color: #363636;
+  font-weight: 700;
 }
 
 .accordion .card-header::after {
@@ -7786,16 +7791,180 @@ a.text-dark:focus {
   transform: rotate(180deg);
 }
 
-.contact-messangers {
+.contact-messengers {
   background: rgba(255, 255, 255, 0.5);
-  padding: 10px 20px;
+  padding: 0 20px 10px;
 }
 
-.contact-messangers p {
+.contact-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #363636;
+  font-weight: 700;
+}
+
+.contact-info__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact-info a {
+  text-decoration: underline;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.7);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.contact-info .icon {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.contact-ico {
+  width: 36px;
+  height: 36px;
+  margin-right: 13px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.description {
   font-size: 16px;
   line-height: 24px;
   color: #363636;
   margin-bottom: 10px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 20px 10px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.contact-form .form-control {
+  border: none;
+  border-bottom: 2px solid #363636;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  resize: none;
+  font-size: 16px;
+  line-height: normal;
+  color: #363636;
+  padding-left: 0;
+}
+
+.contact-form .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  background: #ffffff;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact-form .form-group label[floater] {
+  top: 10px;
+  position: absolute;
+  color: #777;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  pointer-events: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-form .form-group .form-control:focus ~ label[floater] {
+  color: #363636;
+  font-size: 10px;
+  top: -15px;
+}
+
+.contact-form .form-group .form-control:not(:focus):valid ~ label[floater] {
+  color: #777;
+  font-size: 10px;
+  top: -15px;
+}
+
+.contact-form .form-group .form-control:focus + [bar]::after,
+.contact-form .form-group .form-control:focus + [bar]::before {
+  width: 50%;
+}
+
+.contact-form .form-group [bar] {
+  position: relative;
+  width: 100%;
+  display: block;
+  top: -2px;
+}
+
+.contact-form .form-group [bar]::after,
+.contact-form .form-group [bar]::before {
+  background: #363636;
+  content: '';
+  height: 3px;
+  width: 0;
+  position: absolute;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact-form .form-group [bar]::after {
+  left: 50%;
+}
+
+.contact-form .form-group [bar]::before {
+  right: 50%;
 }
 
 @media (min-width: 576px) {

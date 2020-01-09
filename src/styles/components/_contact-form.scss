@@ -1,0 +1,77 @@
+.contact-form {
+  background: rgba(#fff, .5);
+  padding: 0 20px 10px;
+  label {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .form {
+    &-control {
+      border: none;
+      border-bottom: 2px solid $color_default;
+      border-radius: 0;
+      background: transparent;
+      resize: none;
+      font-size: 16px;
+      line-height: normal;
+      color: $color_default;
+      padding-left: 0;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+        background: #ffffff;
+      }
+    }
+    &-group {
+      margin-bottom: 15px;
+      position: relative;
+      label[floater] {
+        top: 10px;
+        position: absolute;
+        color: #777;
+        transition: .25s;
+        pointer-events: none;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      .form-control:focus ~ label[floater] {
+        color: $color_default;
+        font-size: 10px;
+        top: -15px;
+      }
+      .form-control:not(:focus):valid ~ label[floater] {
+        color: #777;
+        font-size: 10px;
+        top: -15px;
+      }
+      .form-control:focus + [bar] {
+        &::after, &::before {
+          width: 50%
+        }
+      }
+      [bar] {
+        position: relative;
+        width: 100%;
+        display: block;
+        top: -2px;
+        &::after, &::before {
+          background: $color_default;
+          content: '';
+          height: 3px;
+          width: 0;
+          position: absolute;
+          transition: .5s ease;
+        }
+        &::after {
+          left: 50%;
+        }
+        &::before {
+          right: 50%;
+        }
+      }
+    }
+  }
+}

@@ -31,7 +31,12 @@
       align-items: center;
       cursor: pointer;
       padding: 10px 20px;
+      min-height: auto;
       background: rgba(#fff, .5);
+      font-size: 20px;
+      line-height: 29px;
+      color: $color_default;
+      font-weight: 700;
       &::after {
         content: '';
         border: 1px solid $color_default;
@@ -50,6 +55,8 @@
       }
       &.collapsed{
         background: $color_floral_white;
+        //min-height: 50px;
+        //padding-top: 0;
         &::after {
           opacity: .5;
           transform: rotate(180deg);

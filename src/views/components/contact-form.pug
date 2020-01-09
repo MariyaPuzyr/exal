@@ -1,14 +1,19 @@
 .contact-form
-  p Вопросы, предложения и пожелания.
+  p.description Вопросы, предложения и пожелания.
   form(action='')
     .form-group
-      label Email:
-      input(type='email').form-control
+      input(type='text', required='').form-control
+      span(bar='')
+      label(floater='') Email:
+      span.helper-text Helper text
     .form-group
-      label Имя:
-      input(type='text').form-control
+      input(type='text', required='').form-control
+      span(bar='')
+      label(floater='') Имя:
+      span.helper-text Helper text
     .form-group
-      label Сообщение:
-      textarea.form-control
+      textarea#message.form-control(rows='2' name="message" required='')
+      span(bar='')
+      label(floater='' for='message') Сообщение:
     .form-group
       button(type='submit').send-btn Отправить

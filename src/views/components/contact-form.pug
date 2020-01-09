@@ -3,17 +3,15 @@
   form(action='')
     .form-group
       input(type='text', required='').form-control
-      span(bar='')
-      label(floater='') Email:
-      span.helper-text Helper text
+      span.form-underline
+      label Email:
     .form-group
       input(type='text', required='').form-control
-      span(bar='')
-      label(floater='') Имя:
-      span.helper-text Helper text
+      span.form-underline
+      label Имя:
     .form-group
       textarea#message.form-control(rows='2' name="message" required='')
-      span(bar='')
-      label(floater='' for='message') Сообщение:
+      span.form-underline
+      label(for='message') Сообщение:
     .form-group
       button(type='submit').send-btn Отправить

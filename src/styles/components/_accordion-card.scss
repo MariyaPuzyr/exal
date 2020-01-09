@@ -55,8 +55,6 @@
       }
       &.collapsed{
         background: $color_floral_white;
-        //min-height: 50px;
-        //padding-top: 0;
         &::after {
           opacity: .5;
           transform: rotate(180deg);

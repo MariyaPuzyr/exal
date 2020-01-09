@@ -37,6 +37,9 @@
       line-height: 29px;
       color: $color_default;
       font-weight: 700;
+      span {
+        border-bottom: 1px dashed transparent;
+      }
       &::after {
         content: '';
         border: 1px solid $color_default;
@@ -58,6 +61,9 @@
         &::after {
           opacity: .5;
           transform: rotate(180deg);
+        }
+        span {
+          border-bottom: 1px dashed rgba($color_default, .5);
         }
       }
     }

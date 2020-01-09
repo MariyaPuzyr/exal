@@ -26,17 +26,17 @@ header.header
         #contacts-info.accordion
           .card
             #headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-              | Мессенджеры
+              span Мессенджеры
             #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#contacts-info')
               include ../components/messengers
           .card
             #headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-              | Форма обратной связи
+              span Форма обратной связи
             #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#contacts-info')
               include ../components/contact-form
           .card
             #headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-              | Адрес и реквизиты
+              span Адрес и реквизиты
             #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#contacts-info')
               include ../components/contact-address
       #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')

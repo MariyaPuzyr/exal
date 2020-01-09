@@ -7747,6 +7747,10 @@ a.text-dark:focus {
   font-weight: 700;
 }
 
+.accordion .card-header span {
+  border-bottom: 1px dashed transparent;
+}
+
 .accordion .card-header::after {
   content: '';
   border: 1px solid #363636;
@@ -7789,6 +7793,10 @@ a.text-dark:focus {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.accordion .card-header.collapsed span {
+  border-bottom: 1px dashed rgba(54, 54, 54, 0.5);
 }
 
 .contact-messengers {
@@ -8013,6 +8021,18 @@ a.text-dark:focus {
 .contact-form .send-btn:disabled {
   opacity: .2;
   cursor: no-drop;
+}
+
+.contact-address {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 20px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363636;
+}
+
+.contact-address p {
+  margin-bottom: 5px;
 }
 
 @media (min-width: 576px) {

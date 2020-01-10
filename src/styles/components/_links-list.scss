@@ -1,5 +1,6 @@
 .menu-height {
   height: calc(100vh - 51px);
+  transition: none;
 }
 
 .links-list {
@@ -83,14 +84,4 @@
       color: rgba($color_default, .7);
     }
   }
-}
-#load {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url('https://webformyself.com/wp-content/uploads/2010/01/ajax-loader.gif');
-  width: 43px;
-  height: 11px;
-  text-indent: -9999em;
 }

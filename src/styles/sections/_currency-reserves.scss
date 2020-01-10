@@ -1,0 +1,61 @@
+.currency-reserves {
+  padding-left: 16px;
+  padding-right: 24px;
+  .back-link {
+    width: 15px;
+    height: 10px;
+    background: url('../img/svg/arrow.svg') no-repeat center;
+    background-size: contain;
+    transform: rotate(-90deg);
+  }
+  .form {
+    &-group label {
+      padding-left: 30px;
+    }
+    &-control {
+      padding-left: 30px;
+    }
+  }
+  .search-btn {
+    width: 17px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    position: absolute;
+    left: 19px;
+    top: 20px;
+    background: $color_default;
+    border: none;
+    mask: url('../img/svg/search.svg') no-repeat center;
+    mask-size: contain;
+  }
+  //&__list {
+  //  padding: 0 24px 0 17px;
+  //}
+  &__item {
+    display: flex;
+    align-items: self-end;
+    color: $color_default;
+    margin-bottom: 15px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 500;
+    margin-left: 24px;
+    span {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+  &__tarif {
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Times New Roman', sans-serif;
+  }
+}

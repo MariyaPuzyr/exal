@@ -7585,6 +7585,9 @@ a.text-dark:focus {
 .menu-height {
   height: -webkit-calc(100vh - 51px);
   height: calc(100vh - 51px);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .links-list {
@@ -7698,17 +7701,6 @@ a.text-dark:focus {
 
 .partners-info__description a {
   color: rgba(54, 54, 54, 0.7);
-}
-
-#load {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url("https://webformyself.com/wp-content/uploads/2010/01/ajax-loader.gif");
-  width: 43px;
-  height: 11px;
-  text-indent: -9999em;
 }
 
 .tab-pane {
@@ -8051,6 +8043,101 @@ a.text-dark:focus {
 
 .contact-address p {
   margin-bottom: 5px;
+}
+
+.currency-reserves {
+  padding-left: 16px;
+  padding-right: 24px;
+}
+
+.currency-reserves .back-link {
+  width: 15px;
+  height: 10px;
+  background: url("../img/svg/arrow.svg") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.currency-reserves .form-group label {
+  padding-left: 30px;
+}
+
+.currency-reserves .form-control {
+  padding-left: 30px;
+}
+
+.currency-reserves .search-btn {
+  width: 17px;
+  height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: absolute;
+  left: 19px;
+  top: 20px;
+  background: #363636;
+  border: none;
+  -webkit-mask: url("../img/svg/search.svg") no-repeat center;
+  mask: url("../img/svg/search.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.currency-reserves__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: self-end;
+  -webkit-align-items: self-end;
+  -ms-flex-align: self-end;
+  align-items: self-end;
+  color: #363636;
+  margin-bottom: 15px;
+}
+
+.currency-reserves__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  margin-left: 24px;
+}
+
+.currency-reserves__info span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.currency-reserves__tarif {
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 @media (min-width: 576px) {

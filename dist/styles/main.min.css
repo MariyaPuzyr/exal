@@ -7685,6 +7685,10 @@ a.text-dark:focus {
   border: none;
 }
 
+.partners-info__copy .copy-btn:focus {
+  outline: none;
+}
+
 .partners-info__description {
   color: rgba(54, 54, 54, 0.7);
   font-size: 14px;
@@ -7694,6 +7698,17 @@ a.text-dark:focus {
 
 .partners-info__description a {
   color: rgba(54, 54, 54, 0.7);
+}
+
+#load {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url("https://webformyself.com/wp-content/uploads/2010/01/ajax-loader.gif");
+  width: 43px;
+  height: 11px;
+  text-indent: -9999em;
 }
 
 .tab-pane {
@@ -7896,92 +7911,6 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
-.contact-form .form-control {
-  border: none;
-  border-bottom: 2px solid #363636;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background: transparent;
-  resize: none;
-  font-size: 16px;
-  line-height: normal;
-  color: #363636;
-  padding-left: 0;
-  min-height: 40px;
-}
-
-.contact-form .form-control:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: none;
-  background: #ffffff;
-}
-
-.contact-form .form-group {
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.contact-form .form-group label {
-  top: 10px;
-  position: absolute;
-  color: #777;
-  -webkit-transition: .25s;
-  -o-transition: .25s;
-  transition: .25s;
-  pointer-events: none;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.contact-form .form-group .form-control:focus ~ label {
-  color: #363636;
-  font-size: 10px;
-  top: -15px;
-}
-
-.contact-form .form-group .form-control:not(:focus):valid {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.contact-form .form-group .form-control:not(:focus):valid ~ label {
-  color: #777;
-  font-size: 10px;
-  top: -15px;
-}
-
-.contact-form .form-group .form-control:focus + .form-underline::after,
-.contact-form .form-group .form-control:focus + .form-underline::before {
-  width: 50%;
-}
-
-.contact-form .form-group .form-underline {
-  position: relative;
-  width: 100%;
-  display: block;
-  top: -2px;
-}
-
-.contact-form .form-group .form-underline::after,
-.contact-form .form-group .form-underline::before {
-  background: #363636;
-  content: '';
-  height: 3px;
-  width: 0;
-  position: absolute;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.contact-form .form-group .form-underline::after {
-  left: 50%;
-}
-
-.contact-form .form-group .form-underline::before {
-  right: 50%;
-}
-
 .contact-form .send-btn {
   margin-top: 30px;
   width: 100%;
@@ -8023,6 +7952,93 @@ a.text-dark:focus {
 .contact-form .send-btn:disabled {
   opacity: .2;
   cursor: no-drop;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #363636;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  resize: none;
+  font-size: 16px;
+  line-height: normal;
+  color: #363636;
+  padding-left: 0;
+  min-height: 40px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  background: #ffffff;
+  border-color: #363636;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group label {
+  top: 10px;
+  position: absolute;
+  color: #777;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  pointer-events: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-group .form-control:focus ~ label {
+  color: #363636;
+  font-size: 10px;
+  top: -15px;
+}
+
+.form-group .form-control:not(:focus):valid {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form-group .form-control:not(:focus):valid ~ label {
+  color: #777;
+  font-size: 10px;
+  top: -15px;
+}
+
+.form-group .form-control:focus + .form-underline::after,
+.form-group .form-control:focus + .form-underline::before {
+  width: 50%;
+}
+
+.form-group .form-underline {
+  position: relative;
+  width: 100%;
+  display: block;
+  top: -2px;
+}
+
+.form-group .form-underline::after,
+.form-group .form-underline::before {
+  background: #363636;
+  content: '';
+  height: 3px;
+  width: 0;
+  position: absolute;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.form-group .form-underline::after {
+  left: 50%;
+}
+
+.form-group .form-underline::before {
+  right: 50%;
 }
 
 .contact-address {

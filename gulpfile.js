@@ -27,6 +27,7 @@ const paths = {
       "./src/views/pages/*.pug"
     ],
     dist: "./dist/",
+    fonts: "./dist/fonts",
     watch: "./src/views/**/*.pug"
   },
   styles: {
@@ -83,7 +84,13 @@ gulp.task('cleanFiles', function () {
       .pipe(debug({title: 'Cleaning...'}))
 });
 /* clear dist directory end */
-
+gulp.task('fonts', function () {
+  return gulp.src('./src/fonts/**/*')
+      .pipe(gulp.dest(paths.views.fonts))
+      .pipe(debug({
+        "title": "Copy fonts:"
+      }));
+});
 gulp.task('views', function () {
   return gulp.src(paths.views.src)
       .pipe(pug({pretty: true}))
@@ -181,6 +188,7 @@ gulp.task('watch',
           'styles',
           'scripts',
           'images',
+          'fonts',
           'sprites',
           'main-libs'
         ],

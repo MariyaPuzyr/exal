@@ -17,4 +17,10 @@ $(document).ready(function () {
       return false;
     });
   });
+
+  /* add news slider */
+  $('.single-item').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
 });

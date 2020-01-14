@@ -7723,13 +7723,18 @@ textarea {
 .content-inner {
   height: -webkit-calc(100vh - 51px);
   height: calc(100vh - 51px);
-  overflow: auto;
-  overflow-x: hidden;
   width: 320px;
   position: absolute;
   top: 51px;
   z-index: 1;
   display: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.content-inner::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .links-list {
@@ -7858,6 +7863,15 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #363636;
+  padding-left: 15px;
+  margin: 0;
 }
 
 .tab-pane {
@@ -8060,7 +8074,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.contact-form .send-btn {
+.send-btn {
   margin-top: 30px;
   width: 100%;
   height: 60px;
@@ -8084,21 +8098,21 @@ textarea {
   outline-offset: 2px;
 }
 
-.contact-form .send-btn:not(:disabled):hover {
+.send-btn:not(:disabled):hover {
   border-width: 4px;
   font-size: 22px;
 }
 
-.contact-form .send-btn:active {
+.send-btn:active {
   background: #363636;
   color: #FFE7CC;
 }
 
-.contact-form .send-btn:focus {
+.send-btn:focus {
   outline: none;
 }
 
-.contact-form .send-btn:disabled {
+.send-btn:disabled {
   opacity: .2;
   cursor: no-drop;
 }
@@ -8153,6 +8167,18 @@ textarea {
 }
 
 .form-group .form-control:not(:focus):valid ~ label {
+  color: #777;
+  font-size: 10px;
+  top: -15px;
+}
+
+.form-group .form-control:valid,
+.form-group .form-control:disabled {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form-group .form-control:valid ~ label,
+.form-group .form-control:disabled ~ label {
   color: #777;
   font-size: 10px;
   top: -15px;

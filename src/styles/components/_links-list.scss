@@ -7,13 +7,17 @@
 
 .content-inner {
   height: calc(100vh - 51px);
-  overflow: auto;
-  overflow-x: hidden;
   width: 320px;
   position: absolute;
   top: 51px;
   z-index: 1;
   display: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 .links-list {
@@ -111,4 +115,13 @@
     line-height: 20px;
     font-weight: normal;
   }
+}
+
+.sidebar-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $color_default;
+  padding-left: 15px;
+  margin: 0;
 }

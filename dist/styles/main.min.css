@@ -8574,6 +8574,60 @@ textarea {
   outline: none;
 }
 
+.settings .checkbox-form {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.settings .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.settings .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 0;
+  color: #363636;
+}
+
+.settings .styled-checkbox + label:before {
+  content: '';
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #363636;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.settings .styled-checkbox:hover + label:before {
+  border-width: 3px;
+}
+
+.settings .styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  background: url("../img/svg/checkbox.svg") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 19px;
+  height: 14px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

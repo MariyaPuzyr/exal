@@ -13,6 +13,29 @@
       <div class="d-flex align-items-center mb-2"><a class="back-link" href="#"></a>
         <h2 class="sidebar-title">Настройки безопасности</h2>
       </div>
+      <form class="settings" action="#">
+        <div class="form-group">
+          <input class="form-control" type="text" required="" value="azaza"><span class="form-underline"></span>
+          <label>Логин:</label>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" required="" disabled="disabled" value="azaza@mail.ru"><span class="form-underline"></span>
+          <label>Email:</label>
+        </div>
+        <div class="checkbox-form">
+          <input class="styled-checkbox" id="pass-recovery" type="checkbox" value="value1">
+          <label for="pass-recovery">Разрешить восстановление пароля</label>
+        </div>
+        <div class="checkbox-form">
+          <input class="styled-checkbox" id="email-notification" type="checkbox" value="value1">
+          <label for="email-notification">Уведомление на email при входе</label>
+        </div>
+        <div class="checkbox-form">
+          <input class="styled-checkbox" id="confirmation-email" type="checkbox" value="value1">
+          <label for="confirmation-email">Вход с подтверждением через email</label>
+        </div>
+        <button class="send-btn">Сохранить</button><a class="change-pass" href="#" data-link="change-password.html">Сменить текущий пароль</a>
+      </form>
     </div>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/main.min.js"></script>

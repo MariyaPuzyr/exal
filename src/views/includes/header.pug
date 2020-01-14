@@ -45,9 +45,27 @@ header.header
       #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
       #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
-        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+        .menu-height
+          .user-info
+            span Привет, artmoney
+            .discount Накопительная скидка – 10%
+          ul.links-list
+            li
+              a(href='#' data-link='personal-info.html') Личная информация
+            li
+              a(href='#' data-link='settings.html') Настройки безопасности
+            li
+              a(href='#') Выйти
+          .partners-info.mt-auto
+            .partners-info__title Партнерская ссылка:
+            form(action='')
+              .partners-info__copy
+                input(type='text' disabled='disabled' value='Exall.money/thanksazaza').form-control
+                button.copy-btn
+              .partners-info__description получайте 10-30% от прибыли с переводов.
+                a(href='#') Подробнее
       #links.tab-pane.fade(role='tabpanel', aria-labelledby='links-tab')
-        .d-flex.flex-column.justify-content-between.menu-height
+        .menu-height
           ul.links-list
             li
               a(href='exchange.html') Обмен
@@ -59,7 +77,7 @@ header.header
               a(href='#') О сервисе
             li
               a(href='affiliate-program.html') Партнерская программа
-          .partners-info
+          .partners-info.mt-auto
             .partners-info__title Партнерская ссылка:
             form(action='')
               .partners-info__copy
@@ -67,3 +85,4 @@ header.header
                 button.copy-btn
               .partners-info__description получайте 10-30% от прибыли с переводов.
                 a(href='#') Подробнее
+      //.content-inner

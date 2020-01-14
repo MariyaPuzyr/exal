@@ -7709,6 +7709,27 @@ textarea {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-inner {
+  height: -webkit-calc(100vh - 51px);
+  height: calc(100vh - 51px);
+  overflow: auto;
+  overflow-x: hidden;
+  width: 320px;
+  position: absolute;
+  top: 51px;
+  z-index: 1;
+  display: none;
 }
 
 .links-list {
@@ -7822,6 +7843,21 @@ textarea {
 
 .partners-info__description a {
   color: rgba(54, 54, 54, 0.7);
+}
+
+.user-info {
+  background: #eae2d1;
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #363636;
+}
+
+.user-info .discount {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
 }
 
 .tab-pane {
@@ -8176,6 +8212,10 @@ textarea {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   margin-left: 16px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .currency-reserves .form-group {

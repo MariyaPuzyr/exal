@@ -1,6 +1,19 @@
 .menu-height {
   height: calc(100vh - 51px);
   transition: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-inner {
+  height: calc(100vh - 51px);
+  overflow: auto;
+  overflow-x: hidden;
+  width: 320px;
+  position: absolute;
+  top: 51px;
+  z-index: 1;
+  display: none;
 }
 
 .links-list {
@@ -83,5 +96,19 @@
     a {
       color: rgba($color_default, .7);
     }
+  }
+}
+
+.user-info {
+  background: #eae2d1;
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color_default;
+  .discount {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
   }
 }

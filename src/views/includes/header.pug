@@ -47,27 +47,99 @@ header.header
           .d-flex.align-items-center.mb-2.position-relative
             a.back-link(href='#')
             h2.sidebar-title Список счетов
-          form(action='#').settings
-            .form-group
-              input(type='text', required='' value='azaza').form-control
-              span.form-underline
-              label Логин:
-            .form-group
-              input(type='text', required='' disabled='disabled' value='azaza@mail.ru').form-control
-              span.form-underline
-              label Email:
-            .checkbox-form
-              input#pass-recovery.styled-checkbox(type='checkbox', value='value1')
-              label(for='pass-recovery') Разрешить восстановление пароля
-            .checkbox-form
-              input#email-notification.styled-checkbox(type='checkbox', value='value1')
-              label(for='email-notification') Уведомление на email при входе
-            .checkbox-form
-              input#confirmation-email.styled-checkbox(type='checkbox', value='value1')
-              label(for='confirmation-email') Вход с подтверждением через email
-            .form-group
-              button.send-btn Сохранить
-              a(href='#' data-link='change-password.html').change-pass.load-page Сменить текущий пароль
+          .registered-user
+            form(action='#')
+              .form-group
+                button.default-btn.add-nvoice Добавить счет
+              .form-group
+                input(type='search', required='').form-control
+                span.form-underline
+                label Поиск по списку счетов
+                button.search-btn
+              .currency-bill-info
+                .currency-info
+                  .currency-info__title Сбербанк РФ
+                  .currency-info__val RUB
+                .currency-bill
+                  .currency-bill__code 2345 4234 3456 7565
+                  .currency-bill__info Константин Константинопольский
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+                .currency-bill
+                  .currency-bill__code 4564 5675 3453 5675
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+
+
+              .currency-bill-info
+                .currency-info
+                  .currency-info__title Bitcoin
+                  .currency-info__val BTC
+                .currency-bill
+                  .currency-bill__code 1Pwj8U … GLL5UWjtTsWQF27q
+                  .currency-bill__info Константин Константинопольский
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+                .currency-bill
+                  .currency-bill__code 1Pwj8U … GLL5UWjtTsWQF27q
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+                .currency-bill
+                  .currency-bill__code 1Pwj8U … GLL5UWjtTsWQF27q
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+                .currency-bill
+                  .currency-bill__code 1Pwj8U … GLL5UWjtTsWQF27q
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+                .currency-bill
+                  .currency-bill__code 1Pwj8U … GLL5UWjtTsWQF27q
+                  .currency-bill__info Константин Константинопольский
+                  button.currency-btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Dropleft
+                  .dropdown-menu
+                    a(href='#').edit-bill
+                    a(href='#').delete-bill(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    .dropdown-menu
+                      a(href='#').delete-bill__btn Удалить
+                      a(href='#').delete-bill__cansel Отмена
+
       #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
         .menu-height
           .user-info

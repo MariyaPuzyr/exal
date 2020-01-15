@@ -114,31 +114,82 @@
               <div class="d-flex align-items-center mb-2 position-relative"><a class="back-link" href="#"></a>
                 <h2 class="sidebar-title">Список счетов</h2>
               </div>
-              <form class="settings" action="#">
-                <div class="form-group">
-                  <input class="form-control" type="text" required="" value="azaza"><span class="form-underline"></span>
-                  <label>Логин:</label>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" type="text" required="" disabled="disabled" value="azaza@mail.ru"><span class="form-underline"></span>
-                  <label>Email:</label>
-                </div>
-                <div class="checkbox-form">
-                  <input class="styled-checkbox" id="pass-recovery" type="checkbox" value="value1">
-                  <label for="pass-recovery">Разрешить восстановление пароля</label>
-                </div>
-                <div class="checkbox-form">
-                  <input class="styled-checkbox" id="email-notification" type="checkbox" value="value1">
-                  <label for="email-notification">Уведомление на email при входе</label>
-                </div>
-                <div class="checkbox-form">
-                  <input class="styled-checkbox" id="confirmation-email" type="checkbox" value="value1">
-                  <label for="confirmation-email">Вход с подтверждением через email</label>
-                </div>
-                <div class="form-group">
-                  <button class="send-btn">Сохранить</button><a class="change-pass load-page" href="#" data-link="change-password.html">Сменить текущий пароль</a>
-                </div>
-              </form>
+              <div class="registered-user">
+                <form action="#">
+                  <div class="form-group">
+                    <button class="default-btn add-nvoice">Добавить счет</button>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="search" required=""><span class="form-underline"></span>
+                    <label>Поиск по списку счетов</label>
+                    <button class="search-btn"></button>
+                  </div>
+                  <div class="currency-bill-info">
+                    <div class="currency-info">
+                      <div class="currency-info__title">Сбербанк РФ</div>
+                      <div class="currency-info__val">RUB</div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">2345 4234 3456 7565</div>
+                      <div class="currency-bill__info">Константин Константинопольский</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">4564 5675 3453 5675</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency-bill-info">
+                    <div class="currency-info">
+                      <div class="currency-info__title">Bitcoin</div>
+                      <div class="currency-info__val">BTC</div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">1Pwj8U … GLL5UWjtTsWQF27q</div>
+                      <div class="currency-bill__info">Константин Константинопольский</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">1Pwj8U … GLL5UWjtTsWQF27q</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">1Pwj8U … GLL5UWjtTsWQF27q</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">1Pwj8U … GLL5UWjtTsWQF27q</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                    <div class="currency-bill">
+                      <div class="currency-bill__code">1Pwj8U … GLL5UWjtTsWQF27q</div>
+                      <div class="currency-bill__info">Константин Константинопольский</div>
+                      <button class="currency-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                      <div class="dropdown-menu"><a class="edit-bill" href="#"></a><a class="delete-bill" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu"><a class="delete-bill__btn" href="#">Удалить</a><a class="delete-bill__cansel" href="#">Отмена</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div class="tab-pane fade" id="user-info" role="tabpanel" aria-labelledby="user-info-tab">

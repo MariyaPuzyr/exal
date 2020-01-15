@@ -1,0 +1,21 @@
+.reload-date {
+  width: 25px;
+  height: 25px;
+  mask: url('../img/svg/refresh-ico.svg') no-repeat center;
+  mask-size: contain;
+  background: $color_default;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    background: #2fab6b;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.operations-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}

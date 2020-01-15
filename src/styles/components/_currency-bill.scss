@@ -1,0 +1,67 @@
+.currency{
+  &-bill {
+    border-top: 1px solid rgba($color_default, .1);
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+    position: relative;
+    &:last-child {
+      border-bottom: 1px solid rgba($color_default, .1);
+      margin-bottom: 40px;
+    }
+    &__info {
+      opacity: .5;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-info {
+      margin: 0 20px;
+    }
+    .edit-bill, .delete-bill {
+      background: $color_default;
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+      transition: .3s;
+      &:hover {
+        background: #2fab6b;
+      }
+    }
+    .edit-bill {
+      mask: url('../img/svg/change-info.svg') no-repeat center;
+    }
+    .delete-bill {
+      mask: url('../img/svg/change-info.svg') no-repeat center;
+    }
+  }
+  &-info {
+    display: flex;
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color_default;
+    font-weight: 500;
+    margin-bottom: 10px;
+    &__val {
+      margin-left: 15px;
+      letter-spacing: .5px;
+      font-family: 'Times New Roman', sans-serif;
+    }
+  }
+  &-btn {
+    width: 4px;
+    height: 19px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    background: url('../img/svg/dropdown-ico.svg') no-repeat center;
+    background-size: contain;
+    border: none;
+    padding: 0;
+    opacity: .3;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

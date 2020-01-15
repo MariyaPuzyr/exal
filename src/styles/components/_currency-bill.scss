@@ -1,4 +1,4 @@
-.currency{
+.currency {
   &-bill {
     border-top: 1px solid rgba($color_default, .1);
     padding: 10px 0;
@@ -21,18 +21,52 @@
     .edit-bill, .delete-bill {
       background: $color_default;
       width: 17px;
-      height: 17px;
+      height: 18px;
       flex: 0 0 auto;
       transition: .3s;
+      position: relative;
       &:hover {
         background: #2fab6b;
       }
     }
     .edit-bill {
       mask: url('../img/svg/change-info.svg') no-repeat center;
+      mask-size: contain;
     }
     .delete-bill {
-      mask: url('../img/svg/change-info.svg') no-repeat center;
+      mask: url('../img/svg/delete-ico.svg') no-repeat center;
+      mask-size: contain;
+      &__cansel {
+        font-weight: 500;
+      }
+    }
+    .separate {
+      width: 1px;
+      height: 19px;
+      background: $color_default;
+      flex: 0 0 auto;
+    }
+    .dropdown-menu {
+      border: none;
+      border-radius: 5px;
+      min-width: 110px;
+      padding: 10px 20px;
+      justify-content: space-between;
+      margin-top: -30px;
+      left: -40px !important;
+      font-size: 14px;
+      line-height: 20px;
+      &.show {
+        display: flex;
+      }
+      .dropdown-menu {
+        left: -100px !important;
+        text-decoration: underline;
+        min-width: 160px;
+        a {
+          color: $color_default;
+        }
+      }
     }
   }
   &-info {
@@ -62,6 +96,9 @@
     opacity: .3;
     &:hover {
       opacity: 1;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

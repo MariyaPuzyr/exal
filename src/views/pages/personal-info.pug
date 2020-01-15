@@ -31,10 +31,17 @@ block content
         input(type='text', required='').form-control
         span.form-underline
         label Отчество:
-      .form-group
-        input(type='text', required='').form-control
-        span.form-underline
+      .form-group-items
         label Паспорт:
+        .d-flex
+          .form-group
+            input(type='text', required='').form-control
+            span.form-underline
+            label серия
+          .form-group
+            input(type='text', required='').form-control
+            span.form-underline
+            label номер
       .form-group
         input(type='text', required='').form-control
         span.form-underline
@@ -43,4 +50,5 @@ block content
         input(type='text', required='').form-control
         span.form-underline
         label Skype:
-      button.send-btn Сохранить
+      .form-group
+        button.send-btn Сохранить

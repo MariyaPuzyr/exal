@@ -40,4 +40,19 @@
       height: 14px;
     }
   }
+  .change-pass {
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+    margin-top: 25px;
+    display: block;
+  }
+  .form-control {
+    padding-left: 0;
+    font-size: 18px;
+  }
+  .form-group label {
+    padding-left: 0;
+  }
 }

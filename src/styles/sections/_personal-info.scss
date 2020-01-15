@@ -1,3 +1,40 @@
 .personal-info {
-
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+    margin: 0 20px 20px;
+  }
+  .form-control {
+    padding-left: 0;
+    font-size: 18px;
+  }
+  .form-group {
+    label {
+      padding-left: 0;
+    }
+    &-items {
+      display: flex;
+      margin: 0 24px 25px 16px;
+      flex-flow: row wrap;
+      .form-group {
+        margin: 0;
+        flex: 0 0 30%;
+      }
+    }
+  }
+  .change-info {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 17px;
+    height: 17px;
+    background: $color_default;
+    mask: url('../img/svg/change-info.svg') no-repeat center;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background: #2fab6b;
+    }
+  }
 }

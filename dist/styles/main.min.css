@@ -8574,6 +8574,62 @@ textarea {
   outline: none;
 }
 
+.personal-info p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  margin: 0 20px 20px;
+}
+
+.personal-info .form-control {
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.personal-info .form-group label {
+  padding-left: 0;
+}
+
+.personal-info .form-group-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 24px 25px 16px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.personal-info .form-group-items .form-group {
+  margin: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+}
+
+.personal-info .change-info {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 17px;
+  height: 17px;
+  background: #363636;
+  -webkit-mask: url("../img/svg/change-info.svg") no-repeat center;
+  mask: url("../img/svg/change-info.svg") no-repeat center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.personal-info .change-info:hover {
+  background: #2fab6b;
+}
+
 .settings .checkbox-form {
   position: relative;
   padding: 0 20px;
@@ -8626,6 +8682,24 @@ textarea {
   background-size: contain;
   width: 19px;
   height: 14px;
+}
+
+.settings .change-pass {
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  margin-top: 25px;
+  display: block;
+}
+
+.settings .form-control {
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.settings .form-group label {
+  padding-left: 0;
 }
 
 @media (min-width: 576px) {

@@ -13,9 +13,47 @@
     outline: none;
   }
 }
-.operations-date {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px;
+
+.operations {
+  &-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 15px;
+  }
+  &-item {
+    padding: 10px 20px;
+    color: $color_default;
+    font-size: 16px;
+    line-height: 20px;
+    &__monetary-information {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      .value {
+        font-weight: 700;
+      }
+      .currency {
+        font-family: 'Times New Roman', sans-serif;
+      }
+    }
+  }
+  &-status-items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.completed-operations {
+  background: rgba(#D9FDD2, .9);
+  .operations-status {
+    color: #3f7a34;
+  }
+}
+
+.waiting-operations {
+  background: rgba(#FFF8C0, .9);
+  .operations-status {
+    color: #A87D34;
+  }
 }

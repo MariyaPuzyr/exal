@@ -8897,7 +8897,64 @@ textarea {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 20px 15px;
+}
+
+.operations-item {
+  padding: 10px 20px;
+  color: #363636;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.operations-item__monetary-information {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.operations-item__monetary-information .value {
+  font-weight: 700;
+}
+
+.operations-item__monetary-information .currency {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.operations-status-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.completed-operations {
+  background: rgba(217, 253, 210, 0.9);
+}
+
+.completed-operations .operations-status {
+  color: #3f7a34;
+}
+
+.waiting-operations {
+  background: rgba(255, 248, 192, 0.9);
+}
+
+.waiting-operations .operations-status {
+  color: #A87D34;
 }
 
 @media (min-width: 576px) {

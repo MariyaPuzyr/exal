@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(this).parents('.header-menu').find('.tab-content').append('<div class="content-inner"></div>');
 
     /* ajax loader pages by click */
-    $('.links-list li a').click(function () {
+    $(document).on("click",".load-page",function() {
       var toLoad = $(this).data('link') + ' #content';
       if (toLoad.length > 0) {
         $(this).parents('.menu-height').hide();

@@ -43,7 +43,31 @@ header.header
       #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
       #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')
-        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+        .currency-reserves
+          .d-flex.align-items-center.mb-2.position-relative
+            a.back-link(href='#')
+            h2.sidebar-title Список счетов
+          form(action='#').settings
+            .form-group
+              input(type='text', required='' value='azaza').form-control
+              span.form-underline
+              label Логин:
+            .form-group
+              input(type='text', required='' disabled='disabled' value='azaza@mail.ru').form-control
+              span.form-underline
+              label Email:
+            .checkbox-form
+              input#pass-recovery.styled-checkbox(type='checkbox', value='value1')
+              label(for='pass-recovery') Разрешить восстановление пароля
+            .checkbox-form
+              input#email-notification.styled-checkbox(type='checkbox', value='value1')
+              label(for='email-notification') Уведомление на email при входе
+            .checkbox-form
+              input#confirmation-email.styled-checkbox(type='checkbox', value='value1')
+              label(for='confirmation-email') Вход с подтверждением через email
+            .form-group
+              button.send-btn Сохранить
+              a(href='#' data-link='change-password.html').change-pass.load-page Сменить текущий пароль
       #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
         .menu-height
           .user-info
@@ -51,9 +75,9 @@ header.header
             .discount Накопительная скидка – 10%
           ul.links-list
             li
-              a(href='#' data-link='personal-info.html') Личная информация
+              a(href='#' data-link='personal-info.html').load-page Личная информация
             li
-              a(href='#' data-link='settings.html') Настройки безопасности
+              a(href='#' data-link='settings.html').load-page Настройки безопасности
             li
               a(href='#') Выйти
           .partners-info.mt-auto
@@ -70,9 +94,9 @@ header.header
             li
               a(href='exchange.html') Обмен
             li
-              a(href='#' data-link='currency-reserves.html') Резервы валют
+              a(href='#' data-link='currency-reserves.html').load-page Резервы валют
             li
-              a(href='#' data-link='news.html') Новости
+              a(href='#' data-link='news.html').load-page Новости
             li
               a(href='#') О сервисе
             li

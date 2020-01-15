@@ -56,3 +56,16 @@
     padding-left: 0;
   }
 }
+
+.settings-title {
+  text-align: left;
+  .sidebar-tagtitle {
+    margin-bottom: 0;
+    padding-left: 45px;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $color_default;
+  }
+}

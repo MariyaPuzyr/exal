@@ -5,7 +5,9 @@
     background: url('../img/svg/arrow.svg') no-repeat center;
     background-size: contain;
     transform: rotate(-90deg);
-    margin-left: 16px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
     flex: 0 0 auto;
   }
   .form {

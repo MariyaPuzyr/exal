@@ -4,7 +4,7 @@ block variables
 
 block content
   .currency-reserves#content
-    .d-flex.align-items-center.mb-2
+    .d-flex.align-items-center.mb-2.position-relative
       a.back-link(href='#')
       h2.sidebar-title Личная информация
     form(action='#').personal-info
@@ -13,12 +13,10 @@ block content
         input(type='text', required='' disabled='disabled' value='azaza').form-control
         span.form-underline
         label Логин:
-        .change-info
       .form-group
         input(type='text', required='' disabled='disabled' value='azaza@mail.ru').form-control
         span.form-underline
         label Email:
-        .change-info
       .form-group
         input(type='text', required='').form-control
         span.form-underline

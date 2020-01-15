@@ -109,15 +109,46 @@
             </div>
           </div>
           <div class="tab-pane fade" id="my-operations" role="tabpanel" aria-labelledby="my-operations-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
-          <div class="tab-pane fade" id="accounts-list" role="tabpanel" aria-labelledby="accounts-list-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.</div>
+          <div class="tab-pane fade" id="accounts-list" role="tabpanel" aria-labelledby="accounts-list-tab">
+            <div class="currency-reserves">
+              <div class="d-flex align-items-center mb-2 position-relative"><a class="back-link" href="#"></a>
+                <h2 class="sidebar-title">Список счетов</h2>
+              </div>
+              <form class="settings" action="#">
+                <div class="form-group">
+                  <input class="form-control" type="text" required="" value="azaza"><span class="form-underline"></span>
+                  <label>Логин:</label>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" required="" disabled="disabled" value="azaza@mail.ru"><span class="form-underline"></span>
+                  <label>Email:</label>
+                </div>
+                <div class="checkbox-form">
+                  <input class="styled-checkbox" id="pass-recovery" type="checkbox" value="value1">
+                  <label for="pass-recovery">Разрешить восстановление пароля</label>
+                </div>
+                <div class="checkbox-form">
+                  <input class="styled-checkbox" id="email-notification" type="checkbox" value="value1">
+                  <label for="email-notification">Уведомление на email при входе</label>
+                </div>
+                <div class="checkbox-form">
+                  <input class="styled-checkbox" id="confirmation-email" type="checkbox" value="value1">
+                  <label for="confirmation-email">Вход с подтверждением через email</label>
+                </div>
+                <div class="form-group">
+                  <button class="send-btn">Сохранить</button><a class="change-pass load-page" href="#" data-link="change-password.html">Сменить текущий пароль</a>
+                </div>
+              </form>
+            </div>
+          </div>
           <div class="tab-pane fade" id="user-info" role="tabpanel" aria-labelledby="user-info-tab">
             <div class="menu-height">
               <div class="user-info"><span>Привет, artmoney</span>
                 <div class="discount">Накопительная скидка – 10%</div>
               </div>
               <ul class="links-list">
-                <li><a href="#" data-link="personal-info.html">Личная информация</a></li>
-                <li><a href="#" data-link="settings.html">Настройки безопасности</a></li>
+                <li><a class="load-page" href="#" data-link="personal-info.html">Личная информация</a></li>
+                <li><a class="load-page" href="#" data-link="settings.html">Настройки безопасности</a></li>
                 <li><a href="#">Выйти</a></li>
               </ul>
               <div class="partners-info mt-auto">
@@ -136,8 +167,8 @@
             <div class="menu-height">
               <ul class="links-list">
                 <li><a href="exchange.html">Обмен</a></li>
-                <li><a href="#" data-link="currency-reserves.html">Резервы валют</a></li>
-                <li><a href="#" data-link="news.html">Новости</a></li>
+                <li><a class="load-page" href="#" data-link="currency-reserves.html">Резервы валют</a></li>
+                <li><a class="load-page" href="#" data-link="news.html">Новости</a></li>
                 <li><a href="#">О сервисе</a></li>
                 <li><a href="affiliate-program.html">Партнерская программа</a></li>
               </ul>

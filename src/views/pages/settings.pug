@@ -4,7 +4,7 @@ block variables
 
 block content
   .currency-reserves#content
-    .d-flex.align-items-center.mb-2
+    .d-flex.align-items-center.mb-2.position-relative
       a.back-link(href='#')
       h2.sidebar-title Настройки безопасности
     form(action='#').settings
@@ -27,4 +27,4 @@ block content
         label(for='confirmation-email') Вход с подтверждением через email
       .form-group
         button.send-btn Сохранить
-        a(href='#' data-link='change-password.html').change-pass Сменить текущий пароль
+        a(href='#' data-link='change-password.html').change-pass.load-page Сменить текущий пароль

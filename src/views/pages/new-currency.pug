@@ -1,0 +1,26 @@
+extends ../extends/layout
+block variables
+  - var title = "exal.money"
+
+block content
+  .currency-reserves#content
+    .d-flex.align-items-center.mb-2.position-relative
+      a.back-link(href='#')
+      .settings-title
+        h6.sidebar-tagtitle Список счетов
+        h2.sidebar-title Добавление счета
+    form(action='#').settings
+      .add-currency
+        label Выберите валюту
+        select
+          option Опция 1
+          option Опция 2
+          option Опция 3
+          option Опция 4
+          option Опция 5
+
+      .form-group
+        button.send-btn Сохранить
+
+      .form-group
+        .cansel-btn Отмена

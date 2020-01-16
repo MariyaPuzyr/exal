@@ -41,9 +41,11 @@ header.header
             #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#contacts-info')
               include ../components/contact-address
       #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')
-        include ../sections/my-operations
+        .menu-height
+          include ../sections/my-operations
       #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')
-        include ../sections/currency-bill
+        .menu-height
+          include ../sections/currency-bill
       #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
         .menu-height
           .user-info

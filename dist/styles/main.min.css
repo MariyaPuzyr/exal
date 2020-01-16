@@ -8905,6 +8905,7 @@ textarea {
   color: #363636;
   font-size: 16px;
   line-height: 20px;
+  border-bottom: 1px solid #fff;
 }
 
 .operations-item__monetary-information {
@@ -8930,6 +8931,43 @@ textarea {
   font-family: 'Times New Roman', sans-serif;
 }
 
+.operations-item__body .operation-status {
+  font-weight: 700;
+  color: #a87d34;
+  padding: 5px 0;
+}
+
+.operations-item__body .update-status {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.operations-item__body .update-status::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  -webkit-mask: url("../img/svg/refresh-ico.svg") no-repeat center;
+  mask: url("../img/svg/refresh-ico.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background: #363636;
+}
+
+.operations-item__body .update-status span {
+  border-bottom: 1px dashed;
+}
+
+.operations-status {
+  font-weight: 700;
+}
+
 .operations-status-items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8939,6 +8977,79 @@ textarea {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-top: 5px;
+}
+
+.operations-status-items .show-more-info {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #363636;
+  opacity: .5;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.operations-status-items .show-more-info::after {
+  content: '';
+  -webkit-mask: url("../img/svg/arrow.svg") no-repeat center;
+  mask: url("../img/svg/arrow.svg") no-repeat center;
+  width: 15px;
+  height: 10px;
+  background: #363636;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.operations-status-items .show-more-info:hover {
+  opacity: 1;
+}
+
+.operations-status-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 24px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.operations-currency {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.operations-currency .currency_logo {
+  margin-right: 5px;
+  width: 36px;
+  height: 36px;
+}
+
+.operations-currency .currency_logo img {
+  width: 100%;
 }
 
 .completed-operations {

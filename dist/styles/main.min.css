@@ -9287,10 +9287,6 @@ textarea {
   color: #363636;
 }
 
-.other-info {
-  display: none;
-}
-
 .other-info.open {
   display: block;
 }
@@ -9312,6 +9308,10 @@ textarea {
   line-height: 20px;
   color: #363636;
   cursor: pointer;
+}
+
+.was-validated span {
+  color: #ff0000;
 }
 
 @media (min-width: 576px) {

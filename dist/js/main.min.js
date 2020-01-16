@@ -40,4 +40,20 @@ $(document).ready(function () {
 
   /* style select options */
   $.ajaxSetup({complete: function(){$("select").styler(); }});
+
+  // function nextStep() {
+  //   if($('.jq-selectbox').hasClass('changed')){
+  //     $('.other-info').addClass('open');
+  //   }
+  // }
+
+});
+
+/* show next step for create account*/
+$.ajax({
+  complete: function() {
+    if($('.jq-selectbox').hasClass('changed')){
+      $('.other-info').addClass('open');
+    }
+  }
 });

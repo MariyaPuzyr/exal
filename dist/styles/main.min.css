@@ -7762,6 +7762,10 @@ textarea {
   mask: url("../img/svg/menu-icons-burger.svg") no-repeat center;
 }
 
+.slick-slide {
+  width: 770px;
+}
+
 .menu-height {
   height: -webkit-calc(100vh - 51px);
   height: calc(100vh - 51px);

@@ -27,7 +27,8 @@ $(document).ready(function () {
   /* add news slider */
   $('.single-item').slick({
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    variableWidth: true
   });
   $('.show-more-info').click(function () {
     $('.operations-item').removeClass('active');

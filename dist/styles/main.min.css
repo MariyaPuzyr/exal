@@ -7604,6 +7604,8 @@ textarea {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 1;
+  position: relative;
 }
 
 .header .logo {
@@ -7931,20 +7933,20 @@ textarea {
   margin: 0;
 }
 
-.tab-pane {
+.tab-pane:not(.item-tabs) {
   width: 320px;
   height: -webkit-calc(100vh - 51px);
   height: calc(100vh - 51px);
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 
-.tab-pane::-webkit-scrollbar {
+.tab-pane:not(.item-tabs)::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-.tab-pane h2:not(.sidebar-title) {
+.tab-pane:not(.item-tabs) h2:not(.sidebar-title) {
   margin: 8px 18px 13px;
   font-size: 24px;
   line-height: 30px;
@@ -9312,6 +9314,130 @@ textarea {
 
 .was-validated span {
   color: #ff0000;
+}
+
+.was-validated .form-control:invalid:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid + .form-underline::after,
+.was-validated .form-control:invalid + .form-underline::before {
+  background: #ff0000;
+}
+
+.get-login p {
+  margin: 0 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+}
+
+.get-login-with {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 26px;
+  color: #363636;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.get-login-with ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.get-login-with a {
+  width: 30px;
+  height: 30px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 12px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.get-login-with a:hover {
+  opacity: .8;
+}
+
+.get-login-with .vk {
+  background: #4F719B url("../img/svg/vk-ico.svg") no-repeat center;
+}
+
+.get-login-with .facebook {
+  background: #4065B4 url("../img/svg/facebook-logo-ico.svg") no-repeat center;
+}
+
+.get-login-with .od {
+  background: #F58221 url("../img/svg/od-ico.svg") no-repeat center;
+}
+
+.get-login .nav-tabs {
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+
+.get-login .nav-tabs .nav-item {
+  width: 50%;
+}
+
+.get-login .nav-tabs .nav-link {
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  text-align: center;
+  padding: 10px 20px;
+  background: #fffcf8;
+}
+
+.get-login .nav-tabs .nav-link.active {
+  background: #dddddd;
+  font-weight: 700;
+}
+
+.get-login .send-btn {
+  margin-bottom: 20px;
+}
+
+.get-login .have-account {
+  display: table;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363636;
+  margin: 0 auto 10px;
 }
 
 @media (min-width: 576px) {

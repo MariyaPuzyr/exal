@@ -28,8 +28,19 @@
   color: $color_default;
   cursor: pointer;
 }
+
 .was-validated {
   span {
     color: #ff0000;
+  }
+  .form-control:invalid {
+    &:focus {
+      box-shadow: none;
+    }
+    & + .form-underline {
+      &::after, &::before {
+        background: #ff0000;
+      }
+    }
   }
 }

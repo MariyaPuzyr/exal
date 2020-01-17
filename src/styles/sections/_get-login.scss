@@ -1,0 +1,77 @@
+.get-login {
+  p {
+    margin: 0 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_default;
+  }
+  &-with {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color_default;
+    font-weight: 700;
+    margin: 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    a {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      border-radius: 50%;
+      transition: .3s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .vk {
+      background: #4F719B url('../img/svg/vk-ico.svg') no-repeat center;
+    }
+    .facebook {
+      background: #4065B4 url('../img/svg/facebook-logo-ico.svg') no-repeat center;
+    }
+    .od {
+      background: #F58221 url('../img/svg/od-ico.svg') no-repeat center;
+    }
+  }
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 20px;
+    .nav-item {
+      width: 50%;
+    }
+    .nav-link {
+      border: none;
+      border-radius: 0;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color_default;
+      text-align: center;
+      padding: 10px 20px;
+      background: #fffcf8;
+      &.active {
+        background: #dddddd;
+        font-weight: 700;
+      }
+    }
+  }
+  .send-btn {
+    margin-bottom: 20px;
+  }
+  .have-account {
+    display: table;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color_default;
+    margin: 0 auto 10px;
+  }
+}

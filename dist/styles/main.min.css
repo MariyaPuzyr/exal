@@ -7763,7 +7763,8 @@ textarea {
 }
 
 .slick-slide {
-  width: 770px;
+  max-width: 770px;
+  width: 100%;
 }
 
 .menu-height {

@@ -9094,18 +9094,12 @@ textarea {
   -webkit-align-items: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.operations-item__monetary-information .value {
-  font-weight: 700;
 }
 
 .operations-item__monetary-information .currency {
   font-family: 'Times New Roman', sans-serif;
+  margin-left: auto;
+  min-width: 35px;
 }
 
 .operations-item__body {
@@ -9113,8 +9107,6 @@ textarea {
 }
 
 .operations-item__body .operation-status {
-  font-weight: 700;
-  color: #a87d34;
   padding: 5px 0;
 }
 
@@ -9180,20 +9172,11 @@ textarea {
   margin-right: 15px;
 }
 
-.operations-status {
-  font-weight: 700;
-}
-
 .operations-status-items {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 5px;
 }
 
 .operations-status-items .show-more-info {
@@ -9220,6 +9203,7 @@ textarea {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  margin-left: auto;
 }
 
 .operations-status-items .show-more-info::after {
@@ -9268,20 +9252,20 @@ textarea {
   width: 100%;
 }
 
+.application-status {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  padding-right: 25px;
+}
+
 .completed-operations {
   background: rgba(217, 253, 210, 0.9);
 }
 
-.completed-operations .operations-status {
-  color: #3f7a34;
-}
-
 .waiting-operations {
   background: rgba(255, 248, 192, 0.9);
-}
-
-.waiting-operations .operations-status {
-  color: #A87D34;
 }
 
 .add-currency {

@@ -30,19 +30,17 @@
     &__monetary-information {
       display: flex;
       align-items: baseline;
-      justify-content: space-between;
-      .value {
-        font-weight: 700;
-      }
       .currency {
         font-family: 'Times New Roman', sans-serif;
+        margin-left: auto;
+        min-width: 35px;
       }
     }
     &__body {
       display: none;
       .operation-status {
-        font-weight: 700;
-        color: #a87d34;
+        //font-weight: 700;
+        //color: #a87d34;
         padding: 5px 0;
       }
       .update-status {
@@ -92,11 +90,8 @@
     }
   }
   &-status {
-    font-weight: 700;
     &-items {
       display: flex;
-      justify-content: space-between;
-      margin-top: 5px;
       .show-more-info {
         width: 30px;
         height: 30px;
@@ -109,6 +104,7 @@
         position: relative;
         cursor: pointer;
         transition: .3s;
+        margin-left: auto;
         &::after {
           content: '';
           mask: url('../img/svg/arrow.svg') no-repeat center;
@@ -141,17 +137,14 @@
     }
   }
 }
-
+.application-status {
+  flex: 0 0 50%;
+  padding-right: 25px;
+}
 .completed-operations {
   background: rgba(#D9FDD2, .9);
-  .operations-status {
-    color: #3f7a34;
-  }
 }
 
 .waiting-operations {
   background: rgba(#FFF8C0, .9);
-  .operations-status {
-    color: #A87D34;
-  }
 }

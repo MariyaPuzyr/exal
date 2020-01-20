@@ -7506,6 +7506,7 @@ body {
   padding: 0;
   font-family: Helvetica, sans-serif;
   background: rgba(255, 137, 0, 0.15);
+  color: #363636;
 }
 
 article,
@@ -8760,7 +8761,10 @@ textarea {
   background: url("../img/svg/copy-ico.svg") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
-  margin-left: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   padding: 0;
   border: none;
 }
@@ -9033,6 +9037,14 @@ input[type=password]:focus {
   outline: none;
   background: #ffffff;
   border-color: #363636;
+}
+
+.form-control:disabled,
+.acf_textarea:disabled,
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .form-group {
@@ -9451,6 +9463,10 @@ input[type=password]:focus {
 
 .acf_div {
   background: transparent;
+}
+
+.form_field_label label {
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {

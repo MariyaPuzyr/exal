@@ -35,6 +35,9 @@ input[type=password] {
     background: #ffffff;
     border-color: $color_default;
   }
+  &:disabled {
+    background: rgba(#fff, .5);
+  }
 }
 
 .form-group {

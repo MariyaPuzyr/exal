@@ -84,7 +84,8 @@
       height: 20px;
       background: url("../img/svg/copy-ico.svg") no-repeat center;
       background-size: contain;
-      margin-left: 20px;
+      //margin-left: 20px;
+      flex: 0 0 auto;
       padding: 0;
       border: none;
       &:focus {

@@ -36,11 +36,10 @@ $(document).ready(function () {
     slidesToScroll: 1,
     variableWidth: true
   });
-  $('.show-more-info').click(function () {
-    $('.operations-item').removeClass('active');
-    $(this).parents('.operations-item').toggleClass('active');
+  $(".show-more-info").click(function () {
+    var o = $(this).parents(".operations-item").attr("class");
+    $(".operations-item").removeClass("active"), "operations-item active" != o && $(this).parents(".operations-item").toggleClass("active")
   });
-
   /* style select options */
   $.ajaxSetup({complete: function(){$("select").styler(); }});
 });

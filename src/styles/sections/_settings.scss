@@ -4,42 +4,6 @@
     padding: 0 20px;
     margin-bottom: 10px;
   }
-  .styled-checkbox {
-    position: absolute;
-    opacity: 0;
-    & + label {
-      position: relative;
-      cursor: pointer;
-      padding: 0;
-      display: flex;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: normal;
-      margin: 0;
-      color: $color_default;
-      &:before {
-        content: '';
-        margin-right: 20px;
-        width: 25px;
-        height: 25px;
-        border: 2px solid $color_default;
-        flex: 0 0 auto;
-      }
-    }
-    &:hover + label:before {
-      border-width: 3px;
-    }
-    &:checked + label:after {
-      content: '';
-      position: absolute;
-      left: 3px;
-      top: 5px;
-      background: url('../img/svg/checkbox.svg') no-repeat center;
-      background-size: contain;
-      width: 19px;
-      height: 14px;
-    }
-  }
   .change-pass {
     text-decoration: underline;
     font-size: 18px;
@@ -67,5 +31,45 @@
     line-height: 20px;
     font-weight: normal;
     color: $color_default;
+  }
+}
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox, .checkbox {
+  & + label,
+  label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    margin: 0;
+    color: $color_default;
+    &:before {
+      content: '';
+      margin-right: 20px;
+      width: 25px;
+      height: 25px;
+      border: 2px solid $color_default;
+      flex: 0 0 auto;
+    }
+  }
+  &:hover + label:before,
+  &:hover label:before {
+    border-width: 3px;
+  }
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    background: url('../img/svg/checkbox.svg') no-repeat center;
+    background-size: contain;
+    width: 19px;
+    height: 14px;
   }
 }

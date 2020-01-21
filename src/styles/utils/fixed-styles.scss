@@ -1,9 +1,192 @@
-.acf_div_title {
+.acf_div_title,
+.log_div_title,
+.reg_div_title,
+.log_line_subm_right,
+.reg_line_subm_right,
+.userwallets_form_title,
+.userxchtable_title {
   display: none;
 }
+
 .acf_div {
   background: transparent;
 }
+
 .form_field_label label {
   margin-bottom: 0;
+}
+
+.resulttrue, .resultfalse {
+  border-radius: 0;
+  color: #fff;
+  font: normal 18px Helvetica, sans-serif;
+  text-align: center;
+  padding: 15px 10px;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 20px;
+  left: 0;
+  z-index: 1;
+  width: calc(100% - 20px);
+}
+
+.resultfalse {
+  background: rgba(255, 34, 34, .8);
+}
+
+.resulttrue {
+  background: rgba(#1DB265, .8);
+}
+
+.log_submit, .reg_submit,
+.userwallets_one_tab input[type="submit"] {
+  @extend .default-btn;
+}
+
+.log_line_subm_left,
+.reg_line_subm_left {
+  float: none;
+  width: 100%;
+}
+
+.captcha_body {
+  display: flex;
+}
+
+.captcha_reload {
+  flex: 0 0 auto;
+}
+
+.log_div, .cf_div, .reg_div, .lp_div, .rf_div, .acf_div, .domacc_div, .checkstatus_div, .userverify_div {
+  background: transparent;
+}
+
+.checkbox {
+  padding: 0;
+  background: transparent;
+  a {
+    color: $color_default;
+  }
+  &.checked {
+    background: transparent;
+    label:after {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      background: url('../img/svg/checkbox.svg') no-repeat center;
+      background-size: contain;
+      width: 19px;
+      height: 14px;
+    }
+  }
+}
+
+.log_div_wrap, .cf_div_wrap, .reg_div_wrap, .lp_div_wrap, .rf_div_wrap, .acf_div_wrap, .domacc_div_wrap, .checkstatus_div_wrap, .userverify_div_wrap {
+  margin: 0;
+}
+
+.checkbox label {
+  display: block;
+  padding-left: 30px;
+  &::before {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.jq-selectbox ul {
+  height: 100%;
+  max-height: 100% !important;
+}
+
+.userwallets_help {
+  line-height: 19px;
+  color: $color_default;
+  opacity: .7;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: normal 14px Helvetica, sans-serif;
+  p {
+    margin: 0;
+  }
+}
+
+.userwallets_form {
+  background: rgba(#fff, .5);
+  padding: 20px;
+  margin: 0;
+}
+
+.get-login-form {
+  width: 320px;
+  height: calc(100vh - 51px);
+  overflow: auto;
+  overflow-x: hidden;
+  display: none;
+  h2 {
+    margin: 8px 18px 13px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $color_default;
+  }
+}
+
+.header-menu.active .get-login-form {
+  display: block;
+}
+
+.userwallets_table_title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #363636;
+  font-weight: 500;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: rgba(#fff, .5);
+  padding: 20px 20px 10px;
+}
+
+.userwallets_table_one {
+  background: rgba(#fff, .5);
+  border-radius: 0;
+  margin: 0;
+  border-top: 1px solid rgba(54, 54, 54, 0.1);
+  padding: 10px 20px;
+  position: relative;
+  &:last-child {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.1);
+  }
+  .userwallets_one_title {
+    line-height: 22px;
+    color: #363636;
+    margin: 0 0 5px;
+    font: 500 18px Helvetica, sans-serif;
+  }
+  .usersbill_one_account {
+    font-size: 18px;
+    line-height: 24px;
+    color: #363636;
+  }
+  .no_items_ins {
+    opacity: .5;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_default;
+  }
+}
+
+.close_userwallets {
+  background: #363636;
+  width: 17px;
+  height: 18px;
+  flex: 0 0 auto;
+  transition: .3s;
+  mask: url("../img/svg/delete-ico.svg") no-repeat center;
+  mask-size: contain;
+  &:hover {
+    background: #2fab6b;
+  }
 }

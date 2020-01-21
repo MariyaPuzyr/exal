@@ -22,11 +22,11 @@ block content
             a(href='#').od
       ul.nav.nav-tabs(role='tablist')
         li.nav-item
-          a#login-tab.nav-link.active(data-toggle='tab', href='#login', role='tab', aria-controls='login', aria-selected='true') Вход
+          a#login-tab.nav-link.active(data-toggle='tab', href='.login', role='tab', aria-controls='login', aria-selected='true') Вход
         li.nav-item
-          a#registration-tab.nav-link(data-toggle='tab', href='#registration', role='tab', aria-controls='registration', aria-selected='false') Регистрация
-      #myTabContent.tab-content
-        #login.item-tabs.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='login-tab')
+          a#registration-tab.nav-link(data-toggle='tab', href='.registration', role='tab', aria-controls='registration', aria-selected='false') Регистрация
+      .tab-content
+        .item-tabs.tab-pane.fade.show.active.login(role='tabpanel', aria-labelledby='login-tab')
           form(action='').settings
             .form-group
               input(type='email', required='').form-control
@@ -40,7 +40,7 @@ block content
               button.send-btn Войти
               a.have-account.load-page(data-link='change-password.html') Не могу вспомнить пароль
               a.have-account(data-toggle='tab', href='#registration', role='tab', aria-controls='registration', aria-selected='false') У меня нет аккаунта
-        #registration.tab-pane.item-tabs.fade(role='tabpanel', aria-labelledby='registration-tab')
+        .tab-pane.item-tabs.fade.registration(role='tabpanel', aria-labelledby='registration-tab')
           form(action='').settings
             .form-group
               input(type='text', required='').form-control

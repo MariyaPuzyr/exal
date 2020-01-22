@@ -4,8 +4,13 @@
 .log_line_subm_right,
 .reg_line_subm_right,
 .userwallets_form_title,
-.userxchtable_title {
+.userxchtable_title,
+.cf_div_title {
   display: none;
+}
+
+textarea {
+  resize: none;
 }
 
 .acf_div {
@@ -22,12 +27,12 @@
   font: normal 18px Helvetica, sans-serif;
   text-align: center;
   padding: 15px 10px;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   margin: 0 20px;
-  left: 0;
+  right: 0;
   z-index: 1;
-  width: calc(100% - 20px);
+  width: 280px;
 }
 
 .resultfalse {
@@ -39,7 +44,8 @@
 }
 
 .log_submit, .reg_submit,
-.userwallets_one_tab input[type="submit"] {
+.userwallets_one_tab input[type="submit"],
+.cf_submit {
   @extend .default-btn;
 }
 
@@ -188,5 +194,21 @@
   mask-size: contain;
   &:hover {
     background: #2fab6b;
+  }
+}
+
+.contact-form {
+  .cf_div {
+    padding: 0;
+  }
+  .cf_textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $color_default;
+    border-radius: 0;
+    padding: 5px 0;
+    &:focus {
+      background: #ffffff;
+    }
   }
 }

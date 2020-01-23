@@ -9859,6 +9859,10 @@ textarea {
   top: 30px;
 }
 
+.js_exchange_link:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

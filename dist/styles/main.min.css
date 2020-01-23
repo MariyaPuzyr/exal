@@ -7788,11 +7788,6 @@ textarea {
   mask: url("../img/svg/menu-icons-burger.svg") no-repeat center;
 }
 
-.slick-slide {
-  max-width: 770px;
-  width: 100%;
-}
-
 .currency-reserves .back-link {
   width: 15px;
   height: 10px;
@@ -14494,6 +14489,44 @@ textarea {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog.modal-news .modal-body {
+    padding: 25px 15px;
+  }
+
+  .modal-dialog.modal-news .section {
+    top: -40px;
+  }
+
+  .modal-dialog.modal-news h2 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .modal-dialog.modal-news p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .modal-dialog.modal-news .share-list {
+    margin-bottom: 0;
+  }
+
+  .slick-arrow {
+    top: -80px;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 115px;
+  }
+
+  .slick-next {
+    right: 45px;
   }
 }
 

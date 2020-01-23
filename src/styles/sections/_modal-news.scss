@@ -13,6 +13,9 @@
   }
   .modal-body {
     padding: 25px 40px;
+    @include adapt_to('large-phone') {
+      padding: 25px 15px;
+    }
   }
   .close {
     position: absolute;
@@ -39,6 +42,9 @@
     font-weight: 500;
     cursor: pointer;
     z-index: 2;
+    @include adapt_to('large-phone') {
+      top: -40px;
+    }
   }
   .date {
     font-size: 18px;
@@ -51,12 +57,21 @@
     line-height: 30px;
     font-weight: 500;
     color: $color_default;
+    @include adapt_to('large-phone') {
+      font-size: 20px;
+      line-height: 29px;
+    }
   }
   p {
     font-size: 20px;
     line-height: 28px;
     color: $color_default;
     margin-bottom: 35px;
+    @include adapt_to('large-phone') {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
   }
   .share {
     &-list {
@@ -72,6 +87,9 @@
         list-style: none;
         padding: 0;
         margin: 0 0 0 15px;
+      }
+      @include adapt_to('large-phone') {
+        margin-bottom: 0;
       }
     }
     &-ico {
@@ -117,15 +135,25 @@
   &:focus {
     outline: none;
   }
+  @include adapt_to('large-phone') {
+    top: -80px;
+  }
 }
 
 .slick-prev {
   left: -83px;
+  @include adapt_to('large-phone') {
+    left: auto;
+    right: 115px;
+  }
 }
 
 .slick-next {
   right: -83px;
   transform: rotate(180deg);
+  @include adapt_to('large-phone') {
+    right: 45px;
+  }
 }
 
 .slick-slide:focus {

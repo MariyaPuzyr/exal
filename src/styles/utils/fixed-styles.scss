@@ -9,7 +9,8 @@ html, body {
 .reg_line_subm_right,
 .userwallets_form_title,
 .userxchtable_title,
-.xtl_ico_wrap {
+.xtl_ico_wrap,
+.hexch_message_wrap {
   display: none;
 }
 
@@ -248,7 +249,8 @@ textarea {
       background: #363636;
       height: 7px;
       left: -50%;
-      bottom: -55px;
+      bottom: -93px;
+      z-index: 1;
     }
     &::after {
       content: '';
@@ -258,7 +260,7 @@ textarea {
       background-size: cover;
       position: absolute;
       right: -11px;
-      bottom: -59px;
+      bottom: -97px;
       transform: rotate(90deg);
       z-index: 1;
       flex: 0 0 auto;
@@ -278,7 +280,8 @@ textarea {
     font-weight: 700;
     overflow: initial;
     .select_js_title_ins {
-      font: 700 36px/74px Helvetica, sans-serif;
+      font: 700 36px Helvetica, sans-serif;
+      line-height: normal;
       padding: 0;
       display: flex;
       align-items: center;
@@ -297,7 +300,8 @@ textarea {
     .select_js_title_ins {
       .select_ico {
         width: 80px;
-        top: -40px;
+        height: 80px;
+        top: -60px;
         left: -30px;
       }
     }
@@ -345,7 +349,7 @@ textarea {
   input[type=text] {
     width: calc(100% - 40px);
     font-size: 90px;
-    line-height: normal;
+    line-height: 91px;
     font-weight: 700;
     height: auto;
   }
@@ -389,7 +393,8 @@ textarea {
   .select_js {
     margin-right: 40px;
     &.open .select_js_title {
-      background: #fff9f3;
+      //background: #fff9f3;
+      background: transparent;
     }
   }
   .xtl_select_wrap {
@@ -479,5 +484,5 @@ textarea {
 }
 .wrapper {
   min-height: auto;
-  margin-top: 80px;
+  margin-top: 50px;
 }

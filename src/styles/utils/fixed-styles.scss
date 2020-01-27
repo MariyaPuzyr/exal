@@ -1,3 +1,7 @@
+html, body {
+  overflow: auto;
+}
+
 .acf_div_title,
 .log_div_title,
 .reg_div_title,
@@ -5,13 +9,7 @@
 .reg_line_subm_right,
 .userwallets_form_title,
 .userxchtable_title,
-.xtl_table_top,
-.jq-selectbox,
-.xtl_ico_wrap
-  //.cf_div_title,
-  //.tbl4 .xtt_table_title3,
-  //.tbl4 .xtt_table_title4
-{
+.xtl_ico_wrap {
   display: none;
 }
 
@@ -51,7 +49,9 @@ textarea {
 
 .log_submit, .reg_submit,
 .userwallets_one_tab input[type="submit"],
-.cf_submit {
+.cf_submit,
+.hexch_submit,
+.rb_submit {
   @extend .default-btn;
 }
 
@@ -231,21 +231,24 @@ textarea {
 }
 
 .homepage_wrap {
+  padding: 0;
+  .xtl_table_top {
+    margin-bottom: 80px;
+  }
   .js_html {
     width: 100%;
   }
   .xtl_table_body_wrap {
     display: flex;
-    border-bottom: 7px solid #363636;
     position: relative;
     &::before {
       content: '';
       position: absolute;
-      width: 100%;
+      width: 150%;
       background: #363636;
       height: 7px;
       left: -50%;
-      bottom: -7px;
+      bottom: -55px;
     }
     &::after {
       content: '';
@@ -255,7 +258,7 @@ textarea {
       background-size: cover;
       position: absolute;
       right: -11px;
-      bottom: -11px;
+      bottom: -59px;
       transform: rotate(90deg);
       z-index: 1;
       flex: 0 0 auto;
@@ -313,7 +316,6 @@ textarea {
     order: -1;
   }
   .xtl_center_col {
-    //padding: 0;
     display: none;
   }
   .xtl_submit.js_exchange_link {
@@ -325,6 +327,7 @@ textarea {
     text-transform: none;
     width: 200px;
     font: 700 30px/40px Helvetica, sans-serif;
+    background: transparent;
     &:hover {
       font-size: 30px !important;
     }
@@ -337,9 +340,14 @@ textarea {
   .xtl_exchange_reserve {
     font-size: 24px;
     line-height: 32px;
+    margin-top: 20px;
   }
   input[type=text] {
     width: calc(100% - 40px);
+    font-size: 90px;
+    line-height: normal;
+    font-weight: 700;
+    height: auto;
   }
   .js_wrap_error.error {
     input {
@@ -349,6 +357,7 @@ textarea {
     .js_error {
       font: 14px/19px Helvetica, sans-serif;
       color: #ff0000;
+      top: auto;
     }
   }
   .select_js_ul {
@@ -379,7 +388,6 @@ textarea {
   }
   .select_js {
     margin-right: 40px;
-    height: auto !important;
     &.open .select_js_title {
       background: #fff9f3;
     }
@@ -390,8 +398,86 @@ textarea {
   .xtl_html_abs {
     background-color: transparent;
   }
+  .jq-selectbox {
+    display: none;
+  }
 }
 
 .hexch_div {
   width: 100%;
+  &_ins {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    .hexch_left,
+    .hexch_right {
+      width: 50%;
+    }
+    .hexch_pers {
+      width: 100%;
+    }
+    .hexch_submit_div,
+    .hexch_checkdata_div {
+      padding: 0;
+    }
+    .hexch_curs_line {
+      display: flex;
+      align-items: center;
+    }
+    .hexch_curs_input, .hexch_pers_input {
+      width: 100%;
+    }
+    .hexch_comis_line {
+      padding: 0;
+      font: normal 14px/19px Helvetica, sans-serif;
+      color: #363636;
+      opacity: .7;
+    }
+    .hexch_curs_label, .hexch_pers_label {
+      width: auto;
+      margin-right: 20px;
+      height: auto;
+      flex: 0 0 140px;
+      &_ins {
+        width: auto;
+        height: auto;
+        text-align: left;
+        font: normal 20px/24px Helvetica, sans-serif;
+        color: #363636;
+      }
+    }
+  }
+  .captcha_div {
+    margin: 0;
+  }
+  .hexch_title, .hexch_pers_title {
+    margin-left: 0;
+  }
+  .hexch_curs_line_ins {
+    flex: 0 0 140px;
+    margin-right: 20px;
+  }
+  .hexch_pers_line {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.standart_windowins {
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.standart_window_close {
+  width: 33px;
+  height: 33px;
+  top: -55px;
+  right: -14px;
+  background: #fff;
+  mask: url('../img/svg/close-ico.svg') no-repeat center;
+}
+.wrapper {
+  min-height: auto;
+  margin-top: 80px;
 }

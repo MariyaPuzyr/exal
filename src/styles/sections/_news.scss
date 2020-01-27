@@ -13,6 +13,9 @@
     text-decoration: underline;
     color: $color_default;
     position: relative;
+    p {
+      margin: 0;
+    }
   }
   &.new .news-list__item--link::before {
     content: '';

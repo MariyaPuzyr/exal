@@ -325,13 +325,14 @@ textarea {
   .xtl_submit.js_exchange_link {
     @extend .default-btn;
     margin: auto auto auto 0;
-    padding: 5px 25px;
+    padding: 18px 25px;
     text-decoration: none;
     border-radius: 0;
     text-transform: none;
-    width: 200px;
+    width: 225px;
     font: 700 30px/40px Helvetica, sans-serif;
     background: transparent;
+    height: 80px;
     &:hover {
       font-size: 30px !important;
     }
@@ -415,6 +416,8 @@ textarea {
     border-radius: 0;
     border: none;
     background: transparent;
+    display: flex;
+    flex-direction: column;
     .hexch_left,
     .hexch_right {
       width: 50%;
@@ -485,4 +488,66 @@ textarea {
 .wrapper {
   min-height: auto;
   margin-top: 50px;
+}
+.hexch_widget {
+  .hexch_title_ins {
+    font: 700 18px/26px Helvetica, sans-serif;
+  }
+  .hexch_txt_line {
+    padding: 0;
+    height: auto;
+    p {
+      margin: 0;
+
+    }
+  }
+  .hexch_left,
+  .hexch_right {
+    width: 100%;
+    order: 0;
+  }
+  .hexch_pers, .captcha_div {
+    order: 0;
+  }
+  .hexch_submit_div {
+    order: 1;
+  }
+  input[type="text"] {
+    font: 20px/24px Helvetica, sans-serif;
+  }
+  .hexch_pers_title_ins {
+    font-size: 48px;
+    line-height: 58px;
+    color: #363636;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  .hexch_submit {
+    padding: 18px 25px;
+    text-decoration: none;
+    border-radius: 0;
+    text-transform: none;
+    width: 205px;
+    font: 700 28px/normal Helvetica, sans-serif;
+    background: transparent;
+    color: #363636;
+    height: 70px;
+    margin: 30px 0;
+    &:hover {
+      font-size: 28px !important;
+    }
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    label {
+      line-height: 25px;
+    }
+  }
+  .hexch_comis_line {
+    padding-left: 160px;
+    position: relative;
+    top: -20px;
+  }
 }

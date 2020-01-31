@@ -11,7 +11,10 @@ body {
   background: rgba(#FF8900, .15);
   color: $color_default;
 }
-
+html,
+body {
+  height: 100%;
+}
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }

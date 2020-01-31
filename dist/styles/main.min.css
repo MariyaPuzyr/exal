@@ -7544,6 +7544,11 @@ body {
   color: #363636;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 article,
 aside,
 figcaption,
@@ -8679,6 +8684,11 @@ textarea {
   line-height: 20px;
   color: #363636;
   margin: 0 auto 10px;
+}
+
+.partners-page {
+  background: #F2F2F2;
+  height: 100%;
 }
 
 .menu-height {

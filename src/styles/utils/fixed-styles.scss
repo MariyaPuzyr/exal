@@ -1,6 +1,6 @@
-html, body {
-  overflow: auto;
-}
+//html, body {
+//  overflow: auto;
+//}
 
 .acf_div_title,
 .log_div_title,
@@ -221,8 +221,11 @@ textarea {
 }
 
 .xchange_table_wrap,
-.hexch_ajax_wrap {
-  width: 1150px;
+.hexch_ajax_wrap,
+.exchange_status_html {
+  max-width: 1150px;
+  margin: auto;
+  width: 100%;
 }
 
 .xtl_table_wrap {
@@ -472,6 +475,18 @@ textarea {
   }
 }
 
+.block_xchdata_title, .block_persdata_title {
+  font: 700 18px/26px Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  color: #2a2a2a;
+  padding: 0;
+  background: transparent;
+  span {
+    background: transparent;
+  }
+}
+
 .standart_windowins {
   box-shadow: none;
   border-radius: 5px;
@@ -485,10 +500,13 @@ textarea {
   background: #fff;
   mask: url('../img/svg/close-ico.svg') no-repeat center;
 }
+
 .wrapper {
   min-height: auto;
   margin-top: 50px;
+  z-index: auto;
 }
+
 .hexch_widget {
   .hexch_title_ins {
     font: 700 18px/26px Helvetica, sans-serif;
@@ -550,4 +568,295 @@ textarea {
     position: relative;
     top: -20px;
   }
+}
+
+.block_submitbutton input[type=submit], a.success_paybutton {
+  width: 400px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  color: #ffffff;
+  font: 700 36px/30px Helvetica, sans-serif;
+  position: relative;
+  transition: .3s;
+  border-radius: 0;
+  border: none;
+  background: url('../img/svg/get-transfer.svg') no-repeat right;
+  &:hover {
+    background: url('../img/svg/get-transfer.svg') no-repeat right;
+    border: none;
+    text-decoration: none;
+  }
+  &:disabled {
+    opacity: .7;
+  }
+}
+
+a.success_paybutton {
+  font: 700 26px/30px Helvetica, sans-serif;
+}
+
+.block_xchdata_info_right {
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  left: -30px;
+}
+
+.block_persdata_info, .block_xchdata_info {
+  position: relative;
+}
+
+.block_xchdata_comm {
+  color: #363636;
+  font: 700 16px/26px Helvetica, sans-serif;
+}
+
+.block_persdata_title_ins {
+  font-size: 48px;
+  line-height: 58px;
+  color: #363636;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.checkbox label {
+  line-height: 25px;
+}
+
+.block_checked_rule {
+  padding-left: 0;
+}
+
+.block_xchdata_text {
+  display: none;
+}
+
+.content_wrap {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.block_statusbids, .block_xchangedata {
+  @extend .hexch_div_ins;
+}
+
+.block_statusbid_title {
+  font: 700 36px/44px Helvetica, sans-serif;
+  margin: 0 0 40px;
+  padding: 0;
+  background: transparent;
+  color: #363636;
+}
+
+.block_payinfo_ins {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  .block_payinfo_sum {
+    width: 50%;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      background: #363636;
+      height: 2px;
+      left: -50%;
+      bottom: 70px;
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      background: url('../img/svg/arrow.svg') no-repeat center;
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      position: absolute;
+      right: -7px;
+      bottom: 63px;
+      transform: rotate(90deg);
+      z-index: 1;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.block_payinfo_sum.block_payinfo_line p {
+  display: flex;
+  font: 700 24px/30px Helvetica, sans-serif;
+  color: #363636;
+
+  .ps {
+    order: -1;
+    margin-right: 15px;
+  }
+  strong {
+    display: none;
+  }
+}
+
+.block_payinfo_warning {
+  font-size: 20px;
+  line-height: 28px;
+  color: #363636;
+}
+
+.block_payinfo {
+  padding-bottom: 40px;
+}
+
+.block_status {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 30px;
+  font: 700 16px/26px Helvetica, sans-serif;
+  color: #363636;
+  opacity: 0.8;
+}
+
+.block_warning_merch {
+  padding: 0;
+  margin: 0 0 30px;
+  background: transparent;
+  font: normal 16px/26px Helvetica, sans-serif;
+  color: #363636;
+  opacity: 0.7;
+  p {
+    margin: 0;
+  }
+}
+
+.cancel_paybutton {
+  @extend .default-btn;
+}
+
+.block_status_delete .block_payinfo_ins,
+.block_status_cancel .block_payinfo_ins {
+  flex-direction: column;
+}
+
+.js_window_wrap .js_purse_input {
+  padding-left: 40px;
+}
+
+.block_paybutton_ins .cancel_paybutton {
+  height: 90px;
+  border-radius: 0;
+  font: 700 26px/30px Helvetica, sans-serif;
+  background: transparent;
+  width: 310px;
+  display: flex;
+  border: 2px solid #363636;
+  color: #363636;
+  &:hover {
+    font-size: 26px;
+    border-width: 3px;
+    text-decoration: none;
+    background: transparent;
+  }
+}
+
+.block_paybutton_merch_ins .merch_paybutton {
+  border-radius: 0;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  width: 480px;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.affiliate-wrap {
+  max-width: 1150px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font: 700 48px/58px Helvetica, sans-serif;
+    color: #363636;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .stattablediv.statstablediv {
+    border: 20px solid #FFDA9F;
+    background: transparent;
+    color: #363636;
+  }
+  .promopage {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .promo_topmenu li a, .promouserdiv h3 {
+    font: 700 36px/normal Helvetica, sans-serif;
+    color: #363636;
+  }
+  .promo_menu ul li {
+    margin: 0;
+    a {
+      font-family: 'Helvetica', sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      color: #363636;
+      border-bottom: 1px solid transparent;
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      text-decoration: underline;
+      transition: .3s;
+      &:hover {
+        margin: 0;
+        border-bottom: 1px solid transparent;
+      }
+    }
+    &.act a {
+      background: #ffffff;
+      text-decoration: none;
+      border-radius: 100px;
+    }
+  }
+  .pbcontainer {
+    padding-top: 20px;
+    &.act {
+      border-top: 1px dashed #363636;
+    }
+  }
+  .partner_textarea, .ptextareaus {
+    background: rgba(255, 255, 255, 0.3);
+    height: auto;
+    min-height: auto;
+  }
+  .promouserdiv h4 {
+    font: 700 20px/29px Helvetica, sans-serif;
+    color: #363636;
+  }
+  .statuserdiv {
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .statuserdiv_title {
+    font: 700 20px 'Open Sans', sans-serif;
+    color: #252927;
+    padding: 20px 10px;
+    margin: 0;
+    background: transparent;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+}
+.page-template-tpl-paccount {
+  background: #D6EFFF;
 }

@@ -15,6 +15,9 @@
     align-items: center;
     z-index: 10;
     position: relative;
+    @include adapt_to('phone'){
+      margin: 10px 20px;
+    }
     span {
       margin-left: 9px;
       @include adapt_to('phone'){
@@ -67,7 +70,7 @@
       }
       @include adapt_to('phone'){
         margin-left: 5px;
-        margin-right: 15px;
+        margin-right: 10px;
       }
     }
     &__tabs {

@@ -1,6 +1,6 @@
-//html, body {
-//  overflow: auto;
-//}
+html, body {
+  overflow: auto;
+}
 
 .acf_div_title,
 .log_div_title,
@@ -238,6 +238,8 @@ textarea {
   padding: 0;
   .xtl_table_top {
     margin-bottom: 80px;
+    opacity: 0;
+    visibility: hidden;
   }
   .js_html {
     width: 100%;
@@ -465,6 +467,9 @@ textarea {
   .hexch_title, .hexch_pers_title {
     margin-left: 0;
   }
+  .hexch_pers_title {
+    display: none;
+  }
   .hexch_curs_line_ins {
     flex: 0 0 140px;
     margin-right: 20px;
@@ -499,6 +504,11 @@ textarea {
   right: -14px;
   background: #fff;
   mask: url('../img/svg/close-ico.svg') no-repeat center;
+  opacity: .5;
+  transition: .3s;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .wrapper {
@@ -1021,7 +1031,7 @@ a.success_paybutton {
   .tab-content .nav-tabs, .tab-pane:not(.item-tabs), .content-inner {
     width: 100%;
   }
-  .page-template-tpl-paccount .header-menu .nav{
+  .page-template-tpl-paccount .header-menu .nav {
     background: transparent;
   }
   .affiliate-wrap {
@@ -1088,5 +1098,55 @@ a.success_paybutton {
   .hexch_widget input[type="text"] {
     font-size: 18px !important;
     line-height: normal;
+  }
+}
+
+.standart_shadow {
+  background: rgba(29, 178, 101, 0.8);
+  opacity: 1;
+}
+
+.reserv_box {
+  .standart_windowins {
+    padding: 25px 40px;
+    width: 100%;
+  }
+  .standart_window_title {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    position: absolute;
+    top: -50px;
+    z-index: 110;
+    color: #fff;
+    left: 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .standart_window_title_ins {
+    width: 90%;
+  }
+  .rb_textarea {
+    border: none;
+    border-bottom: 2px solid #363636;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: transparent;
+    resize: none;
+    font-size: 16px;
+    line-height: normal;
+    color: #363636;
+    padding-left: 0;
+    min-height: 40px;
+    width: 100%;
+  }
+  .standart_window_close {
+    top: 0;
   }
 }

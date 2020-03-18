@@ -1,16 +1,13 @@
-html, body {
-  overflow: auto;
-}
-
-.acf_div_title,
-.log_div_title,
-.reg_div_title,
-.log_line_subm_right,
-.reg_line_subm_right,
-.userwallets_form_title,
-.userxchtable_title,
-.xtl_ico_wrap,
-.hexch_message_wrap {
+//.acf_div_title,
+//.log_div_title,
+//.reg_div_title,
+//.log_line_subm_right,
+//.reg_line_subm_right,
+//.userwallets_form_title,
+//.userxchtable_title,
+.xtl_ico_wrap
+  //.hexch_message_wrap
+{
   display: none;
 }
 
@@ -306,8 +303,8 @@ textarea {
       .select_ico {
         width: 80px;
         height: 80px;
-        top: -60px;
-        left: -30px;
+        top: -25px;
+        left: -90px;
       }
     }
   }
@@ -526,7 +523,7 @@ textarea {
     height: auto;
     p {
       margin: 0;
-
+      
     }
   }
   .hexch_left,
@@ -607,12 +604,14 @@ textarea {
 a.success_paybutton {
   font: 700 26px/30px Helvetica, sans-serif;
 }
-
+.block_xchdata_info {
+  padding-left: 60px;
+}
 .block_xchdata_info_right {
   position: absolute;
   z-index: -1;
-  top: -60px;
-  left: -30px;
+  top: 0;
+  left: 0;
 }
 
 .block_persdata_info, .block_xchdata_info {
@@ -698,7 +697,7 @@ a.success_paybutton {
   display: flex;
   font: 700 24px/30px Helvetica, sans-serif;
   color: #363636;
-
+  
   .ps {
     order: -1;
     margin-right: 15px;
@@ -805,7 +804,7 @@ a.success_paybutton {
     padding: 0;
     margin: 0;
   }
-
+  
   .promo_topmenu li a, .promouserdiv h3 {
     font: 700 36px/normal Helvetica, sans-serif;
     color: #363636;
@@ -876,11 +875,22 @@ a.success_paybutton {
   #container {
     min-width: 100%;
   }
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    
+    .logo {
+      height: auto;
+    }
+  }
   .header-menu {
     width: 100%;
     .nav {
       margin-left: auto;
-      width: 320px;
+      width: 100%;
       background: #ffedd9;
     }
     &.active .nav {
@@ -902,12 +912,15 @@ a.success_paybutton {
       margin-right: 8px;
     }
     .xtl_table_top {
-      display: none;
+      margin-bottom: 20px;
+      opacity: 1;
+      visibility: visible;
     }
     input[type=text] {
-      font-size: 50px;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: normal;
       width: 100%;
+      padding-right: 0;
     }
     .xtl_table_body {
       display: flex;
@@ -918,14 +931,14 @@ a.success_paybutton {
       flex-direction: column;
       &::before {
         height: 2px;
-        bottom: -70px;
+        bottom: -40px;
       }
       &::after {
         width: 17px;
         height: 27px;
         background-size: contain;
         right: -6px;
-        bottom: -82px;
+        bottom: -52px;
       }
     }
     .xtl_left_col,
@@ -1087,7 +1100,7 @@ a.success_paybutton {
       width: 55px;
       height: 55px;
       top: -10px;
-      left: 20px;
+      left: 0;
       position: relative;
       margin-right: 8px;
     }
@@ -1128,7 +1141,7 @@ a.success_paybutton {
     font-weight: 500;
     font-family: Helvetica, sans-serif;
   }
-
+  
   .standart_window_title_ins {
     width: 90%;
   }
@@ -1148,5 +1161,57 @@ a.success_paybutton {
   }
   .standart_window_close {
     top: 0;
+  }
+}
+.info_window {
+  background: #2FAB6B;
+  padding: 15px 20px;
+  border-right: none;
+  border-bottom: none;
+  &_abs {
+    -webkit-mask: url("../images/ug.png") no-repeat;
+    mask: url("../images/ug.png") no-repeat;
+    background: #2FAB6B;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 769px) {
+  .block_payinfo {
+    .block_payinfo_ins {
+      .block_payinfo_sum {
+        &::before {
+          bottom: 85px;
+        }
+        &::after {
+          bottom: 78px;
+        }
+      }
+    }
+  }
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffedd9;
+    z-index: 100000;
+    padding-left: 20px;
+    .logo {
+      height: auto;
+    }
+  }
+  .block_paybutton_ins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .success_paybutton {
+      margin-top: 20px;
+    }
+  }
+  .block_payinfo_warning {
+    max-width: 735px;
+    margin: auto;
   }
 }

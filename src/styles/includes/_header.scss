@@ -15,12 +15,12 @@
     align-items: center;
     z-index: 10;
     position: relative;
-    @include adapt_to('phone'){
+    @include adapt_to('large-phone') {
       margin: 10px 20px;
     }
     span {
       margin-left: 9px;
-      @include adapt_to('phone'){
+      @include adapt_to('large-phone') {
         display: none;
       }
     }
@@ -30,7 +30,7 @@
     right: 0;
     top: 0;
     width: 320px;
-    @include adapt_to('phone'){
+    @include adapt_to('large-phone') {
       .nav {
         justify-content: flex-end;
       }
@@ -68,7 +68,7 @@
         font-size: 14px;
         line-height: 14px;
       }
-      @include adapt_to('phone'){
+      @include adapt_to('large-phone') {
         margin-left: 5px;
         margin-right: 10px;
       }

@@ -603,6 +603,7 @@ textarea {
 
 a.success_paybutton {
   font: 700 26px/30px Helvetica, sans-serif;
+  margin-left: 0;
 }
 .block_xchdata_info {
   padding-left: 60px;
@@ -751,20 +752,24 @@ a.success_paybutton {
   padding-left: 40px;
 }
 
-.block_paybutton_ins .cancel_paybutton {
-  height: 90px;
-  border-radius: 0;
-  font: 700 26px/30px Helvetica, sans-serif;
-  background: transparent;
-  width: 310px;
-  display: flex;
-  border: 2px solid #363636;
-  color: #363636;
-  &:hover {
-    font-size: 26px;
-    border-width: 3px;
-    text-decoration: none;
+.block_paybutton_ins {
+  flex-flow: row-reverse wrap;
+  .cancel_paybutton {
+    height: 90px;
+    border-radius: 0;
+    font: 700 26px/30px Helvetica, sans-serif;
     background: transparent;
+    width: 310px;
+    display: flex;
+    border: 2px solid #363636;
+    color: #363636;
+    margin-right: 0;
+    &:hover {
+      font-size: 26px;
+      border-width: 3px;
+      text-decoration: none;
+      background: transparent;
+    }
   }
 }
 
@@ -776,6 +781,7 @@ a.success_paybutton {
   justify-content: center;
   font-size: 26px;
   width: 480px;
+  margin-left: 0;
   &:hover {
     text-decoration: none;
     color: #ffffff;
@@ -1024,7 +1030,7 @@ a.success_paybutton {
   }
   .block_paybutton_ins {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     .cancel_paybutton {
       width: 100%;
       margin-bottom: 20px;
@@ -1204,14 +1210,19 @@ a.success_paybutton {
   }
   .block_paybutton_ins {
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     align-items: center;
-    .success_paybutton {
-      margin-top: 20px;
-    }
+    //.success_paybutton {
+    //  margin-top: 20px;
+    //}
   }
   .block_payinfo_warning {
-    max-width: 735px;
+    //max-width: 735px;
     margin: auto;
   }
+}
+.log_div_title, .reg_div_title, .log_line_subm_right, .acf_div_title {display: none}
+.block_statusbids_ins {
+  display: flex;
+  flex-direction: column;
 }
